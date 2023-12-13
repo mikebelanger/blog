@@ -1,0 +1,30 @@
+version: 2.0
+shards:
+  backtracer:
+    git: https://github.com/sija/backtracer.cr.git
+    version: 1.2.2
+
+  crystagiri:
+    git: https://github.com/madeindjs/crystagiri.git
+    version: 0.3.5
+
+  exception_page:
+    git: https://github.com/crystal-loot/exception_page.git
+    version: 0.3.1
+
+  grip:
+    git: https://github.com/grip-framework/grip.git
+    version: 2.0.3
+
+  markd:
+    git: https://github.com/icyleaf/markd.git
+    version: 0.5.0
+
+  radix:
+    git: https://github.com/luislavena/radix.git
+    version: 0.4.1
+
+  to_html:
+    git: https://github.com/sbsoftware/to_html.cr.git
+    version: 1.0.2
+

@@ -1,0 +1,32 @@
+#top-banner > section {
+	display: flex;
+	align-items: center;
+}
+
+#top-banner > section > a {
+	margin: calc(var(--spacing) / 2);
+	color: white;
+	width: fit-content;
+	display: flex;
+	align-content: center;
+	text-decoration:none;
+}
+
+@media (min-width: 560px) {
+	#top-banner > section > a:nth-child(1) {
+		margin-left: var(--spacing);
+	}
+}
+
+#top-banner > section > a:hover {
+	color: var(--active-color);
+}
+
+#top-banner > section > a:focus-visible,
+#top-banner > section > a:active,
+#top-banner > section > a:focus,
+#top-banner > section > a.current {
+	outline: none;
+	color: var(--active-color);
+	text-decoration: underline;
+}

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'amblelight';
+    src: url('../fonts/Amble-Light-webfont.woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+html {
+  --active-color: rgb(237 255 133);
+  --corner-rounding: 1em;
+  --spacing: 1em;
+  height: 100%;
+  width: 100%;
+  font-family: "amblelight", "serif";
+  font-size: larger;
+}
+
+body {
+  display: flex;
+  height: inherit;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  justify-content: flex-end;
+  height: 3em;
+}
+
+footer > a {
+  display: block;
+  padding: 0.5em;
+}
+
+footer > h3 {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 1em;
+}

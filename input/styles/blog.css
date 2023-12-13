@@ -1,0 +1,10 @@
+blockquote {
+  background-color: #cfcccc;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: .15em .15em .5em black;
+  margin: 0em;
+}
+blockquote > p {
+  margin: 0em;
+}

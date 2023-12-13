@@ -1,0 +1,29 @@
+name: v1
+version: 0.1.0
+
+dependencies:
+  crystagiri:
+    github: madeindjs/crystagiri
+  grip:
+    github: grip-framework/grip
+  markd:
+    github: icyleaf/markd
+  to_html:
+    github: sbsoftware/to_html.cr
+
+# authors:
+#   - name <email@example.com>
+
+# description: |
+#   Short description of v1
+
+# dependencies:
+#   pg:
+#     github: will/crystal-pg
+#     version: "~> 0.5"
+
+# development_dependencies:
+#   webmock:
+#     github: manastech/webmock.cr
+
+# license: MIT
