@@ -1,1 +1,4 @@
 lib/*
+output/*
+shard.lock
+build_site
