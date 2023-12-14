@@ -13,12 +13,14 @@ if (pageContentNode) {
   const highlightBannerLink = (id) => { 
     const bannerLinks = document.getElementsByClassName('page-link');
 
-    for (let banner of bannerLinks) {
-      if (banner.id !== id) {
-        banner.classList.remove('active');
-      } else {
-        banner.classList.add('active');
-      }
+    if (bannerLinks) {
+      for (let banner of bannerLinks) {
+        if (banner.id !== id) {
+          banner.classList.remove('active');
+        } else {
+          banner.classList.add('active');
+        }
+      }  
     }
   }
 
@@ -34,29 +36,22 @@ if (pageContentNode) {
 
       // Add an 'active' highlight classname for the top banner link, to ensure that
       // it remains yellow, even if someone clicks off it.
-      try {
-        highlightBannerLink('blog.html');
-      } catch(e) {
-        console.error("banner highlight error: ", JSON.stringify(e));
-      };
+      highlightBannerLink('blog.html');
 
     // If its a top-level page
     } else {
       
       // Add an 'active' highlight classname for the top banner link, to ensure that
       // it remains yellow, even if someone clicks off it.
-      try {
-        highlightBannerLink(`${extension}.html`);
-      } catch(e) {
-        console.error("banner highlight error: ", JSON.stringify(e));
-      };
+      highlightBannerLink(`${extension}.html`);
 
       switch(extension) {
         case '':
-          loadPage('/home.html')
+          loadPage('/home.html');
+          highlightBannerLink('home.html');
           break;
         case 'blog':
-          loadPage('/blog.html')
+          loadPage('/blog.html');
           break;
         default:
           loadPage(extension);
