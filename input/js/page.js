@@ -9,6 +9,20 @@ if (pageContentNode) {
     if (hljs) hljs.highlightAll();
   }
 
+  // When you click on any top link, and click away, this ensures it stays yellow
+  const highlightBannerLink = (id) => { 
+    const bannerLinks = document.getElementsByClassName('page-link');
+
+    for (let banner of bannerLinks) {
+      if (banner.id !== id) {
+        banner.classList.remove('active');
+      } else {
+        banner.classList.add('active');
+      }
+    }
+  }
+
+
   // Base content changes on a corresponding template inside the banner
   const updateLink = (event) => {
     // If it isn't anything, default to home
@@ -16,9 +30,27 @@ if (pageContentNode) {
 
     // If its a blog post
     if (extension.includes('blog_')) {
-      loadPage(`${extension.replace('_', '/')}.html`);    
+      loadPage(`${extension.replace('_', '/')}.html`);
+
+      // Add an 'active' highlight classname for the top banner link, to ensure that
+      // it remains yellow, even if someone clicks off it.
+      try {
+        highlightBannerLink('blog.html');
+      } catch(e) {
+        console.error("banner highlight error: ", JSON.stringify(e));
+      };
+
     // If its a top-level page
     } else {
+      
+      // Add an 'active' highlight classname for the top banner link, to ensure that
+      // it remains yellow, even if someone clicks off it.
+      try {
+        highlightBannerLink(`${extension}.html`);
+      } catch(e) {
+        console.error("banner highlight error: ", JSON.stringify(e));
+      };
+
       switch(extension) {
         case '':
           loadPage('/home.html')

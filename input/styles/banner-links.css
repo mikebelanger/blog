@@ -25,7 +25,8 @@
 #top-banner > section > a:focus-visible,
 #top-banner > section > a:active,
 #top-banner > section > a:focus,
-#top-banner > section > a.current {
+#top-banner > section > a.current,
+#top-banner > section > a.active {
 	outline: none;
 	color: var(--active-color);
 	text-decoration: underline;
