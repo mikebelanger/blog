@@ -1,9 +1,24 @@
+h1, h2, h3 {
+  margin-top: 0em;
+}
+
+code {
+  width: fit-content;
+  padding: 0.25em;
+  border-radius: 0.5em;
+  box-shadow: .15em .15em .5em black;
+  /* overflow-wrap: revert; */
+  /* white-space: pre; */
+  /* word-break: break-all; */
+  /* overflow-x: clip; */
+}
+
 blockquote {
   background-color: #cfcccc;
   padding: 1em;
   border-radius: 0.5em;
   box-shadow: .15em .15em .5em black;
-  margin: 0em;
+  width: fit-content;
 }
 blockquote > p {
   margin: 0em;

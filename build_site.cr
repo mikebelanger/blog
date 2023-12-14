@@ -92,7 +92,11 @@ class MarkdownSource
   end
   def move_support_files
     ["fonts", "img", "js", "styles", "svg"].each do |subdir|
-      FileUtils.cp_r Path.new(@input_directory, subdir), Path.new(@output_directory, subdir)
+      dest = Path.new(@output_directory, subdir)
+      if Dir.exists?(dest)
+        FileUtils.rm_rf dest
+      end
+      FileUtils.cp_r Path.new(@input_directory, subdir), dest
     end
   end
 end
