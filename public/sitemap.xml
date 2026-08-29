@@ -1,29 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://127.0.0.1:3000/about/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:3000/archives/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://127.0.0.1:3000/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/posts/getting-started-with-hwaro/</loc>
-    <lastmod>2026-08-23</lastmod>
+    <loc>http://127.0.0.1:3000/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://127.0.0.1:3000/posts/hello-world/</loc>
     <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:3000/posts/getting-started-with-hwaro/</loc>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -40,6 +35,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://127.0.0.1:3000/archives/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://127.0.0.1:3000/posts/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -50,12 +50,22 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://127.0.0.1:3000/tags/home/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://127.0.0.1:3000/tags/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/tags/home/</loc>
+    <loc>http://127.0.0.1:3000/tags/introduction/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://127.0.0.1:3000/tags/hello/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -71,16 +81,6 @@
   </url>
   <url>
     <loc>http://127.0.0.1:3000/tags/hwaro/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:3000/tags/introduction/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:3000/tags/hello/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -120,12 +120,12 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/categories/tutorials/</loc>
+    <loc>http://127.0.0.1:3000/categories/general/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/categories/general/</loc>
+    <loc>http://127.0.0.1:3000/categories/tutorials/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

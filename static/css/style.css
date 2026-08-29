@@ -1,3 +1,9 @@
+:root {
+    color-scheme: light dark;
+    --page-spread: 1.5em;
+    --border: light-dark(#e3dbcf, #362e29);
+}
+
 .stack {
     display: flex;
     align-items: center;
@@ -9,31 +15,83 @@
 nav.stack {
     align-items: center;
     justify-content: space-between;
-    gap: 1em;
+    gap: var(--page-spread);
 }
 
 .slim {
-    margin-left: 1em;
-    margin-right: 1em;
+    padding-left: var(--page-spread);
+    padding-right: var(--page-spread);
 }
 
 .search-and-theme {
     justify-content: flex-end !important;
 }
 
-header {
+.search-and-theme > * {
+    border: unset;
+}
+
+header.slim {
     display: flex;
     justify-content: space-between;
+    border-bottom-color: var(--primary);
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+
+header.post-header {
+    margin: unset;
+    padding: unset;
+}
+
+main {
+    padding: var(--page-spread) !important;
+}
+
+article.post {
+    padding: 0em !important;
+    margin: 0em !important;
+    background-color: unset;
+    border-radius: unset;
+    box-shadow: unset;
+}
+
+header.post-header {
+    background-color: unset;
+    margin-bottom: var(--page-spread);
+}
+
+h1 {
+    margin: unset;
 }
 
 /* Theme switcher — cycles auto → light → dark (script inlined in footer). */
-.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0; border: 1px solid var(--border); border-radius: var(--radius-sm); background: transparent; color: var(--text-muted); cursor: pointer; transition: color var(--transition), border-color var(--transition), transform 0.1s var(--ease-out); }
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: color var(--transition),
+    border-color var(--transition),
+    transform 0.1s var(--ease-out);
+    margin: 0 !important;
+}
+
 .theme-toggle:hover { color: var(--primary); border-color: var(--primary); }
 .theme-toggle:active { transform: scale(0.94); }
 .theme-toggle svg { display: none; }
 .theme-toggle[data-mode="auto"] .tt-auto,
 .theme-toggle[data-mode="light"] .tt-light,
 .theme-toggle[data-mode="dark"] .tt-dark { display: block; }
+
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--page-spread) * 0.25);
+    margin-top: calc(var(--page-spread) * 0.25);
+}
 
 /* Search overlay */
 .search-overlay {
@@ -65,4 +123,5 @@ header {
   overflow: hidden;
   align-self: flex-start;
 }
+
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--bg-raised); } }

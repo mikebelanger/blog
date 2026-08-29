@@ -1,8 +1,8 @@
 {% include "header.html" %}
 {% include "partials/nav.html" %}
 {% include "partials/search.html" %}
-<div class="blog-container slim">
-  <main id="main" class="blog-main">
+  <main id="main">
     {% if page.title is present %}<h1>{{ page.title | e }}</h1>{% endif %}
     {{ content }}
+  </main>
 {% include "footer.html" %}

@@ -7,8 +7,6 @@ authors = ["mike"]
 description = "My thoughts on the Lucky web framework."
 +++
 
-## The Lucky Framework
-
 My first developer gig was writing [Rails](https://rubyonrails.org/) apps. At that job, I learned why Rails was so popular. Its cli-generators were a godsend. The simple, elegant syntax of [Ruby](https://ruby-lang.org/), combined with some clever macros allowed me to focus on business logic rather than coding boilerplate and ceremony.
 
 After a few years of writing/maintaining Rails apps, I got burned out. Rails was great for getting quick prototypes up and running, and getting clients excited (and to pay!). Where Rails fell short was maintenance: preventing Nil-reference errors, improper variable name calling. Rails' sluggish performance wasn't usually an issue for me, but when it was, it was a nightmare to deal with.
