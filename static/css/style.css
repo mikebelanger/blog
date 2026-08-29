@@ -1,6 +1,6 @@
 :root {
     color-scheme: light dark;
-    --page-spread: 1.5em;
+    --page-spread: 2rem;
     --border: light-dark(#e3dbcf, #362e29);
 }
 
@@ -29,6 +29,7 @@ nav.stack {
 
 .search-and-theme > * {
     border: unset;
+    padding: unset;
 }
 
 header.slim {
