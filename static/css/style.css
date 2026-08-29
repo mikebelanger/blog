@@ -3,6 +3,14 @@
     --page-spread: 2rem;
     --border: light-dark(#e3dbcf, #362e29);
     --border-width: 1px;
+    height: 100vh;
+}
+
+body {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .stack {
@@ -48,6 +56,8 @@ header.post-header, footer.blog-footer {
 
 main {
     padding: var(--page-spread) !important;
+    overflow-y: auto;
+    margin-bottom: auto;
 }
 
 article.post {
