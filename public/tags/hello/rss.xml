@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My Blog - Tags: hello</title>
+    <link>http://127.0.0.1:3000/tags/hello/</link>
+    <description>Welcome to my personal blog powered by Hwaro.</description>
+    <atom:link href="http://127.0.0.1:3000/tags/hello/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>http://127.0.0.1:3000/posts/hello-world/</link>
+      <guid>http://127.0.0.1:3000/posts/hello-world/</guid>
+      <description>Where this blog starts, and how to make it yours.</description>
+      <content:encoded><![CDATA[<p>Every blog starts somewhere, and this one starts here. The site around this post is powered by Hwaro, a fast static site generator written in Crystal.</p>
+<h2 id="what-the-samples-show">What the samples show</h2>
+<p>Three sample posts (including this one) demonstrate how dates, tags, and categories flow through the homepage feed, the archives, and the taxonomy pages. When you're ready to write for real:</p>
+<ul>
+<li>Delete the samples under <code>content/posts/</code>.</li>
+<li>Run <code>hwaro new posts/my-first-post.md</code> to start a post; the archetype fills in the front matter.</li>
+<li>Publish with <code>hwaro build</code>.</li>
+</ul>
+<p>The feed and archives pick up new posts automatically. Nothing else to wire up.</p>
+]]></content:encoded>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <category>introduction</category>
+      <category>hello</category>
+      <category>general</category>
+    </item>
+  </channel>
+</rss>

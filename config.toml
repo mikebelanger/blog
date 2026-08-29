@@ -1,0 +1,76 @@
+title = "My Blog"
+description = "Welcome to my personal blog powered by Hwaro."
+base_url = "http://localhost:3000"
+[plugins]
+processors = ["markdown"]
+
+[content.files]
+allow_extensions = ["jpg", "jpeg", "png", "gif", "svg", "webp"]
+
+[highlight]
+enabled = true
+mode = "server"
+theme = "github"
+use_cdn = true
+copy = true
+
+[[taxonomies]]
+name = "tags"
+feed = true
+
+[[taxonomies]]
+name = "categories"
+
+[[taxonomies]]
+name = "authors"
+
+[sitemap]
+enabled = true
+
+[feeds]
+enabled = true
+type = "rss"
+limit = 10
+sections = ["posts"]
+
+[search]
+enabled = true
+format = "fuse_json"
+
+[[menus.main]]
+name = "Posts"
+url = "/posts/"
+weight = 1
+
+[[menus.main]]
+name = "Archives"
+url = "/archives/"
+weight = 2
+
+[[menus.main]]
+name = "About"
+url = "/about/"
+weight = 3
+
+
+# =============================================================================
+# OpenGraph & Twitter Cards (recommended for social sharing)
+# =============================================================================
+
+[og]
+type = "article"
+twitter_card = "summary_large_image"
+
+# =============================================================================
+# Markdown (commonly customized)
+# =============================================================================
+
+[markdown]
+emoji = true
+task_lists = true
+definition_lists = true
+footnotes = true
+mermaid = false        # Render ```mermaid code blocks as diagrams (loads mermaid.js)
+math = false           # Inline ($...$) and block ($$...$$) math (loads math_engine)
+math_engine = "katex"  # "katex" or "mathjax"
+

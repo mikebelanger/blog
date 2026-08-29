@@ -1,0 +1,13 @@
+{% include "header.html" %}
+{% include "partials/nav.html" %}
+{% include "partials/search.html" %}
+<div class="blog-container">
+  <main id="main" class="blog-main">
+    {% if page.title is present %}<h1>{{ page.title | e }}</h1>{% endif %}
+    {{ content }}
+
+    <ul class="section-list">
+      {{ section.list }}
+    </ul>
+    {{ pagination }}
+{% include "footer.html" %}

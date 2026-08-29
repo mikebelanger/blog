@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My Blog - Tags: crystal</title>
+    <link>http://127.0.0.1:3000/tags/crystal/</link>
+    <description>Welcome to my personal blog powered by Hwaro.</description>
+    <atom:link href="http://127.0.0.1:3000/tags/crystal/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts on Lucky</title>
+      <link>http://127.0.0.1:3000/posts/thoughts-on-lucky/</link>
+      <guid>http://127.0.0.1:3000/posts/thoughts-on-lucky/</guid>
+      <description>Where this blog starts, and how to make it yours.</description>
+      <content:encoded><![CDATA[<h2 id="the-lucky-framework">The Lucky Framework</h2>
+<p>My first developer job was writing <a href="https://rubyonrails.org/">Rails</a> apps. So I have a soft-spot in my heart for Ruby on Rails. In that time, I learned a lot about why Rails was so popular. Its convention-over-configuration scaffold generation was a godsend. The simple, elegant syntax of <a href="https://ruby-lang.org/">Ruby</a>, combined with some clever Rails macros allowed me to focus on business logic rather than code boilerplate and ceremony.</p>
+<p>After a few years of doing this, I found myself getting burned out. It turns out Rails was great for getting quick prototypes up and running, and getting clients excited. Where Rails fell short was maintenance: preventing Nil-reference errors, improper variable name calling. Performance wasn't the best, either.</p>
+<p>Really, those issues can be attributed to the dynamic type (read: duck) type system of Ruby. So I don't think my experience with Rails was unique. It was a common experience of any framework written in a dynamically-typed programming language.</p>
+<p>I eventually switched jobs, and started doing more frontend, React-specific sites. Most of it using Typescript. Typescript prevented lots of the silly footguns that javascript, another dynamically typed language, would tend to give. But there were other drawbacks to this tech. React, on its own, was just a library, not a framework. So there were no scaffold generators, and if there were macros/preprocessors, they must've been minimal. That translated to much more boilerplate. Besides, the code was pure client-side. Most of the time, the client side was at the whim of a backend that was usually dynamically-typed.</p>
+<p>This all made me wonder: can I get the best of both &quot;worlds&quot;? Something with good, strong scaffold-generation to enforce conventions, and something with static typing? Something with simple syntax, but strong-typing? That brings me to <a href="https://luckyframework.org/">Lucky</a>.</p>
+<p>Lucky is written in a less-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegent. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style continutations</a> channels for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>) It uses the same LLVM-backed system to compile its code into binaries, (the same as Rust's, actually). So you get speedy programs, static analysis, all while retaining a simple syntax.</p>
+]]></content:encoded>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <category>crystal</category>
+      <category>lucky</category>
+      <category>general</category>
+    </item>
+  </channel>
+</rss>

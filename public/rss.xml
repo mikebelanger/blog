@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My Blog</title>
+    <link>http://127.0.0.1:3000/</link>
+    <description>Welcome to my personal blog powered by Hwaro.</description>
+    <atom:link href="http://127.0.0.1:3000/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown Tips and Tricks</title>
+      <link>http://127.0.0.1:3000/posts/markdown-tips/</link>
+      <guid>http://127.0.0.1:3000/posts/markdown-tips/</guid>
+      <description>Learn useful Markdown formatting techniques for your blog posts.</description>
+      <content:encoded><![CDATA[<p>Hwaro uses Markdown for content. Here are some useful formatting tips.</p>
+<h2 id="text-formatting">Text Formatting</h2>
+<ul>
+<li><strong>Bold text</strong> using <code>**bold**</code></li>
+<li><em>Italic text</em> using <code>*italic*</code></li>
+<li><code>Inline code</code> using backticks</li>
+</ul>
+<h2 id="code-blocks">Code Blocks</h2>
+<p>Use triple backticks for code blocks:</p>
+<pre data-copy="true"><code class="language-crystal hljs">puts <span class="hljs-string">&quot;</span><span class="hljs-string">Hello from Crystal!</span><span class="hljs-string">&quot;</span><span class="hljs-string"></span>
+</code></pre>
+<h2 id="lists">Lists</h2>
+<p>Ordered lists:</p>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<p>Unordered lists:</p>
+<ul>
+<li>Item one</li>
+<li>Item two</li>
+<li>Item three</li>
+</ul>
+<h2 id="links-and-images">Links and Images</h2>
+<p>Create a link with square brackets around the text and parentheses
+around the URL, for example <a href="https://github.com/hahwul/hwaro">Hwaro on GitHub</a>.
+Prefix the same form with <code>!</code> to embed an image instead.</p>
+<h2 id="tables">Tables</h2>
+<table>
+<thead>
+<tr>
+<th>Syntax</th>
+<th>Renders as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>**bold**</code></td>
+<td><strong>bold</strong></td>
+</tr>
+<tr>
+<td><code>*italic*</code></td>
+<td><em>italic</em></td>
+</tr>
+<tr>
+<td>`<code> </code>code<code> </code>`</td>
+<td><code>code</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="blockquotes">Blockquotes</h2>
+<blockquote>
+<p>This is a blockquote.
+It can span multiple lines.</p>
+</blockquote>
+<p>Happy writing!</p>
+]]></content:encoded>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>markdown</category>
+      <category>writing</category>
+      <category>tips</category>
+      <category>tutorials</category>
+    </item>
+    <item>
+      <title>Getting Started with Hwaro</title>
+      <link>http://127.0.0.1:3000/posts/getting-started-with-hwaro/</link>
+      <guid>http://127.0.0.1:3000/posts/getting-started-with-hwaro/</guid>
+      <description>A beginner&apos;s guide to building websites with Hwaro.</description>
+      <content:encoded><![CDATA[<p>In this post, I'll walk you through the basics of setting up and using Hwaro.</p>
+<h2 id="installation">Installation</h2>
+<p>First, make sure you have Crystal installed. Then:</p>
+<pre data-copy="true"><code class="language-bash hljs">git clone https://github.com/hahwul/hwaro
+<span class="hljs-built_in">cd</span> hwaro
+shards build
+</code></pre>
+<h2 id="creating-your-first-site">Creating Your First Site</h2>
+<pre data-copy="true"><code class="language-bash hljs">hwaro init my-blog --scaffold blog
+<span class="hljs-built_in">cd</span> my-blog
+hwaro serve
+</code></pre>
+<p>That's it! Your blog is now running at <code>http://localhost:3000</code>.</p>
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li>Customize your templates in the <code>templates/</code> directory</li>
+<li>Add new posts in <code>content/posts/</code></li>
+<li>Configure your site in <code>config.toml</code></li>
+</ul>
+]]></content:encoded>
+      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
+      <category>tutorial</category>
+      <category>getting-started</category>
+      <category>hwaro</category>
+      <category>tutorials</category>
+    </item>
+    <item>
+      <title>Hello World</title>
+      <link>http://127.0.0.1:3000/posts/hello-world/</link>
+      <guid>http://127.0.0.1:3000/posts/hello-world/</guid>
+      <description>Where this blog starts, and how to make it yours.</description>
+      <content:encoded><![CDATA[<p>Every blog starts somewhere, and this one starts here. The site around this post is powered by Hwaro, a fast static site generator written in Crystal.</p>
+<h2 id="what-the-samples-show">What the samples show</h2>
+<p>Three sample posts (including this one) demonstrate how dates, tags, and categories flow through the homepage feed, the archives, and the taxonomy pages. When you're ready to write for real:</p>
+<ul>
+<li>Delete the samples under <code>content/posts/</code>.</li>
+<li>Run <code>hwaro new posts/my-first-post.md</code> to start a post; the archetype fills in the front matter.</li>
+<li>Publish with <code>hwaro build</code>.</li>
+</ul>
+<p>The feed and archives pick up new posts automatically. Nothing else to wire up.</p>
+]]></content:encoded>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <category>introduction</category>
+      <category>hello</category>
+      <category>general</category>
+    </item>
+    <item>
+      <title>Thoughts on Lucky</title>
+      <link>http://127.0.0.1:3000/posts/thoughts-on-lucky/</link>
+      <guid>http://127.0.0.1:3000/posts/thoughts-on-lucky/</guid>
+      <description>Where this blog starts, and how to make it yours.</description>
+      <content:encoded><![CDATA[<h2 id="the-lucky-framework">The Lucky Framework</h2>
+<p>My first developer job was writing <a href="https://rubyonrails.org/">Rails</a> apps. So I have a soft-spot in my heart for Ruby on Rails. In that time, I learned a lot about why Rails was so popular. Its convention-over-configuration scaffold generation was a godsend. The simple, elegant syntax of <a href="https://ruby-lang.org/">Ruby</a>, combined with some clever Rails macros allowed me to focus on business logic rather than code boilerplate and ceremony.</p>
+<p>After a few years of doing this, I found myself getting burned out. It turns out Rails was great for getting quick prototypes up and running, and getting clients excited. Where Rails fell short was maintenance: preventing Nil-reference errors, improper variable name calling. Performance wasn't the best, either.</p>
+<p>Really, those issues can be attributed to the dynamic type (read: duck) type system of Ruby. So I don't think my experience with Rails was unique. It was a common experience of any framework written in a dynamically-typed programming language.</p>
+<p>I eventually switched jobs, and started doing more frontend, React-specific sites. Most of it using Typescript. Typescript prevented lots of the silly footguns that javascript, another dynamically typed language, would tend to give. But there were other drawbacks to this tech. React, on its own, was just a library, not a framework. So there were no scaffold generators, and if there were macros/preprocessors, they must've been minimal. That translated to much more boilerplate. Besides, the code was pure client-side. Most of the time, the client side was at the whim of a backend that was usually dynamically-typed.</p>
+<p>This all made me wonder: can I get the best of both &quot;worlds&quot;? Something with good, strong scaffold-generation to enforce conventions, and something with static typing? Something with simple syntax, but strong-typing? That brings me to <a href="https://luckyframework.org/">Lucky</a>.</p>
+<p>Lucky is written in a less-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegent. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style continutations</a> channels for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>) It uses the same LLVM-backed system to compile its code into binaries, (the same as Rust's, actually). So you get speedy programs, static analysis, all while retaining a simple syntax.</p>
+]]></content:encoded>
+      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
+      <category>crystal</category>
+      <category>lucky</category>
+      <category>general</category>
+    </item>
+  </channel>
+</rss>
