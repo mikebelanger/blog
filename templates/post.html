@@ -62,13 +62,13 @@
       <nav class="post-nav" aria-label="More posts">
         {% if page.lower and page.lower.section == page.section and not page.lower.is_index %}
         <a class="post-nav-link post-nav-prev" href="{{ base_url }}{{ page.lower.url }}" rel="prev">
-          <span class="post-nav-label">Newer</span>
+          <span class="post-nav-label">(Newer)</span>
           <span class="post-nav-title">{{ page.lower.title | e }}</span>
         </a>
         {% endif %}
         {% if page.higher and page.higher.section == page.section and not page.higher.is_index %}
         <a class="post-nav-link post-nav-next" href="{{ base_url }}{{ page.higher.url }}" rel="next">
-          <span class="post-nav-label">Older</span>
+          <span class="post-nav-label">(Older)</span>
           <span class="post-nav-title">{{ page.higher.title | e }}</span>
         </a>
         {% endif %}

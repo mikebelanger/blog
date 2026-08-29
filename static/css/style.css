@@ -115,7 +115,11 @@ h1 {
     margin-top: calc(var(--page-spread) * 0.25);
 }
 
-.post-meta > *, header > p, main > p {
+.post-meta > *,
+header > p,
+main > p,
+.post-nav-label
+{
     font-style: italic;
 }
 
