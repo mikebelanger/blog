@@ -3,7 +3,7 @@
     --page-spread: 2rem;
     --border: light-dark(#e3dbcf, #362e29);
     --border-width: 1px;
-    height: 100vh;
+    height: 100%;
 }
 
 body {
