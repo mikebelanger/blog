@@ -5,8 +5,9 @@
     --border-width: 1px;
     height: 100%;
 
-    font-family: Monospace;
-    font-size: x-large;
+    h1, h2, h3, h4, h5, h6, p, a {
+        font-family: Monospace;
+    }
 }
 
 body {
