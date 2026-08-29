@@ -46,6 +46,10 @@ nav.stack {
     padding: unset;
 }
 
+button.search-trigger > span {
+    padding-right: calc(0.25 * var(--page-spread));
+}
+
 header.slim {
     display: flex;
     justify-content: space-between;
@@ -93,7 +97,8 @@ h1 {
     transition: color var(--transition),
     border-color var(--transition),
     transform 0.1s var(--ease-out);
-    margin: 0 !important;
+    margin: calc(0.24 * var(--page-spread));
+    padding: calc(0.24 * var(--page-spread));
 }
 
 .theme-toggle:hover { color: var(--primary); border-color: var(--primary); }
