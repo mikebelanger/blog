@@ -1,4 +1,4 @@
-title = "Mike's thoughts (Main page)"
+title = "Mike's Meanderings"
 description = "Welcome to my personal blog powered by Hwaro."
 base_url = "http://localhost:3000"
 [plugins]
