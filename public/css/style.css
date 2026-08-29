@@ -125,4 +125,11 @@ h1 {
   align-self: flex-start;
 }
 
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	border-top-style: solid;
+}
+
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--bg-raised); } }
