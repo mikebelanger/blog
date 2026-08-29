@@ -2,6 +2,7 @@
     color-scheme: light dark;
     --page-spread: 2rem;
     --border: light-dark(#e3dbcf, #362e29);
+    --border-width: 1px;
 }
 
 .stack {
@@ -18,7 +19,7 @@ nav.stack {
     gap: var(--page-spread);
 }
 
-.slim {
+.slim, footer.blog-footer {
     padding-left: var(--page-spread);
     padding-right: var(--page-spread);
 }
@@ -37,10 +38,10 @@ header.slim {
     justify-content: space-between;
     border-bottom-color: var(--primary);
 	border-bottom-style: solid;
-	border-bottom-width: 1px;
+	border-bottom-width: var(--border-width);
 }
 
-header.post-header {
+header.post-header, footer.blog-footer {
     margin: unset;
     padding: unset;
 }
@@ -94,6 +95,10 @@ h1 {
     margin-top: calc(var(--page-spread) * 0.25);
 }
 
+.post-meta > *, header > p, main > p {
+    font-style: italic;
+}
+
 /* Search overlay */
 .search-overlay {
   display: none;
@@ -130,6 +135,12 @@ footer {
 	bottom: 0;
 	width: 100%;
 	border-top-style: solid;
+	border-width: var(--border-width);
+	padding: var(--page-spread) !important;
+}
+
+footer > p {
+    margin: unset;
 }
 
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--bg-raised); } }
