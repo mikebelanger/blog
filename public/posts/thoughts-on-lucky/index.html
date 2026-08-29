@@ -3,44 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Where this blog starts, and how to make it yours.">
-  <title>Thoughts on Lucky - My Blog</title>
+  <meta name="description" content="My thoughts on the Lucky web framework.">
+  <title>Thoughts on Lucky - Mike&#39;s thoughts (Main page)</title>
   <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:3000/favicon.svg">
   <script>(function(){try{var t=localStorage.getItem("hwaro-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})()</script>
   <meta property="og:title" content="Thoughts on Lucky">
   <meta property="og:type" content="article">
   <meta property="og:url" content="http://127.0.0.1:3000/posts/thoughts-on-lucky/">
-  <meta property="og:description" content="Where this blog starts, and how to make it yours.">
+  <meta property="og:description" content="My thoughts on the Lucky web framework.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Thoughts on Lucky">
-  <meta name="twitter:description" content="Where this blog starts, and how to make it yours.">
+  <meta name="twitter:description" content="My thoughts on the Lucky web framework.">
   <link rel="canonical" href="http://127.0.0.1:3000/posts/thoughts-on-lucky/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Thoughts on Lucky","url":"http://127.0.0.1:3000/posts/thoughts-on-lucky/","datePublished":"2026-08-18T00:00:00-04:00","description":"Where this blog starts, and how to make it yours.","author":{"@type":"Person","name":"mike"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"My Blog","item":"http://127.0.0.1:3000/"},{"@type":"ListItem","position":2,"name":"Posts","item":"http://127.0.0.1:3000/posts/"},{"@type":"ListItem","position":3,"name":"Thoughts on Lucky"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Thoughts on Lucky","url":"http://127.0.0.1:3000/posts/thoughts-on-lucky/","datePublished":"2026-08-18T00:00:00-04:00","description":"My thoughts on the Lucky web framework.","author":{"@type":"Person","name":"mike"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Mike's thoughts (Main page)","item":"http://127.0.0.1:3000/"},{"@type":"ListItem","position":2,"name":"Posts","item":"http://127.0.0.1:3000/posts/"},{"@type":"ListItem","position":3,"name":"Thoughts on Lucky"}]}</script>
   
   
   
   <link rel="stylesheet" href="http://127.0.0.1:3000/css/pico.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css">
   
   
   
   
 </head>
 <body data-section="posts">
-  <a class="skip-link" href="#main">Skip to content</a>
-<header class="container">
-  <div class="blog-header-inner">
-    <a href="http://127.0.0.1:3000/" class="logo">My Blog</a>
-    <nav>
+<header class="slim">
+    <nav class="stack">
+        <a href="http://127.0.0.1:3000/" class="logo">Mike&#39;s thoughts (Main page)</a>
+
       <!-- Add/reorder links via [[menus.main]] in config.toml, or
            register a page/section into "main" from its own front
            matter with `menus = ["main"]` — no template edit
            required either way. -->
       <a href="/posts/">Posts</a><a href="/archives/">Archives</a><a href="/about/">About</a>
     </nav>
-    <div class="header-right">
-      
-      <button class="search-trigger" onclick="openSearch()" title="Search">
+    <div class="stack search-and-theme">
+      <!---->
+      <button class="search-trigger outline" onclick="openSearch()" title="Search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <span>Search</span>
         <kbd>&#8984;K</kbd>
@@ -51,7 +51,6 @@
   <svg class="tt-dark" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.4 9.9A5.8 5.8 0 0 1 6.1 2.6a5.8 5.8 0 1 0 7.3 7.3z" fill="currentColor"/></svg>
 </button>
     </div>
-  </div>
 </header>
 <div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
   <div class="search-modal">
@@ -71,7 +70,7 @@
         <h1>Thoughts on Lucky</h1>
         <div class="post-meta">
           <time datetime="2026-08-18">2026-08-18</time>
-          <span class="post-meta-sep">·</span> <span class="post-reading-time">2 min read</span>
+          <span class="post-meta-sep">·</span> <span class="post-reading-time">3 min read</span>
         </div>
 
 <div class="post-tags">
@@ -81,11 +80,12 @@
       </header>
       <div class="post-content">
         <h2 id="the-lucky-framework">The Lucky Framework</h2>
-<p>My first developer job was writing <a href="https://rubyonrails.org/">Rails</a> apps. So I have a soft-spot in my heart for Ruby on Rails. In that time, I learned a lot about why Rails was so popular. Its convention-over-configuration scaffold generation was a godsend. The simple, elegant syntax of <a href="https://ruby-lang.org/">Ruby</a>, combined with some clever Rails macros allowed me to focus on business logic rather than code boilerplate and ceremony.</p>
-<p>After a few years of doing this, I found myself getting burned out. It turns out Rails was great for getting quick prototypes up and running, and getting clients excited. Where Rails fell short was maintenance: preventing Nil-reference errors, improper variable name calling. Performance wasn't the best, either.</p>
-<p>Really, those issues can be attributed to the dynamic type (read: duck) type system of Ruby. So I don't think my experience with Rails was unique. It was a common experience of any framework written in a dynamically-typed programming language.</p>
-<p>I eventually switched jobs, and started doing more frontend, React-specific sites. Most of it using Typescript. Typescript prevented lots of the silly footguns that javascript, another dynamically typed language, would tend to give. But there were other drawbacks to this tech. React, on its own, was just a library, not a framework. So there were no scaffold generators, and if there were macros/preprocessors, they must've been minimal. That translated to much more boilerplate. Besides, the code was pure client-side. Most of the time, the client side was at the whim of a backend that was usually dynamically-typed.</p>
-<p>This all made me wonder: can I get the best of both &quot;worlds&quot;? Something with good, strong scaffold-generation to enforce conventions, and something with static typing? Something with simple syntax, but strong-typing? That brings me to <a href="https://luckyframework.org/">Lucky</a>.</p>
+<p>My first developer gig was writing <a href="https://rubyonrails.org/">Rails</a> apps. At that job, I learned why Rails was so popular. Its cli-generators were a godsend. The simple, elegant syntax of <a href="https://ruby-lang.org/">Ruby</a>, combined with some clever macros allowed me to focus on business logic rather than coding boilerplate and ceremony.</p>
+<p>After a few years of writing/maintaining Rails apps, I got burned out. Rails was great for getting quick prototypes up and running, and getting clients excited (and to pay!). Where Rails fell short was maintenance: preventing Nil-reference errors, improper variable name calling. Rails' sluggish performance wasn't usually an issue for me, but when it was, it was a nightmare to deal with.</p>
+<p>Really, those issues weren't specific to Rails. Most of the issues I ran into can be attributed to the dynamically-typed (read: duck) aspect of Ruby. After doing more work in other untyped languages like Javascript and Python, I encountered similar issues. So really, it was a problem with dynamically-typed languages.</p>
+<p>I eventually switched jobs, and started doing more frontend, React-specific sites. Most of it using Typescript. Typescript prevented lots of the silly footguns that javascript, another dynamically typed language, were prone to. If I had to make large changes to the codebase (such as a refactor, or resolve merge conflicts) I felt reasonably confident once the TS compiler was satisfied.</p>
+<p>But the Typescript + React combo had its own downsides. I used React on its own.  Which is fine, but its just a library, not a framework. So there were no scaffold generators, and if there were macros/preprocessors, they must've been minimal (ignoring the fact that TSX is kind of a macro system, of sorts). That translated to much more boilerplate. If there were any coding conventions, we had to adhere to them manually. PR reviews felt like us policing eachother on silly code conventions, and less about the intent of the PR.</p>
+<p>This made me wonder: can we get the best of both worlds? Something with good, strong scaffold-generation to enforce conventions, and something with static typing? Something with simple syntax, but strong-typing? That brings me to <a href="https://luckyframework.org/">Lucky</a>.</p>
 <p>Lucky is written in a less-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegent. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style continutations</a> channels for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>) It uses the same LLVM-backed system to compile its code into binaries, (the same as Rust's, actually). So you get speedy programs, static analysis, all while retaining a simple syntax.</p>
 
       </div>
@@ -111,7 +111,7 @@
       
     </article>
     <footer class="blog-footer">
-      <p>My Blog · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
+      <p>Mike&#39;s thoughts (Main page) · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
     </footer>
   </main>
 </div>

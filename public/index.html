@@ -4,42 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A blog powered by Hwaro: posts, archives, and tags.">
-  <title>My Blog</title>
+  <title>Mike&#39;s thoughts (Main page)</title>
   <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:3000/favicon.svg">
   <script>(function(){try{var t=localStorage.getItem("hwaro-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})()</script>
-  <meta property="og:title" content="My Blog">
+  <meta property="og:title" content="Mike&apos;s thoughts (Main page)">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://127.0.0.1:3000/">
   <meta property="og:description" content="A blog powered by Hwaro: posts, archives, and tags.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="My Blog">
+  <meta name="twitter:title" content="Mike&apos;s thoughts (Main page)">
   <meta name="twitter:description" content="A blog powered by Hwaro: posts, archives, and tags.">
   <link rel="canonical" href="http://127.0.0.1:3000/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"My Blog","url":"http://127.0.0.1:3000/","description":"Welcome to my personal blog powered by Hwaro.","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"http://127.0.0.1:3000/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Mike's thoughts (Main page)","url":"http://127.0.0.1:3000/","description":"Welcome to my personal blog powered by Hwaro.","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"http://127.0.0.1:3000/?q={search_term_string}"},"query-input":"required name=search_term_string"}}</script>
   
   
   
   <link rel="stylesheet" href="http://127.0.0.1:3000/css/pico.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css">
   
   
   
   
 </head>
 <body data-section="">
-  <a class="skip-link" href="#main">Skip to content</a>
-<header class="container">
-  <div class="blog-header-inner">
-    <a href="http://127.0.0.1:3000/" class="logo">My Blog</a>
-    <nav>
+<header class="slim">
+    <nav class="stack">
+        <a href="http://127.0.0.1:3000/" class="logo">Mike&#39;s thoughts (Main page)</a>
+
       <!-- Add/reorder links via [[menus.main]] in config.toml, or
            register a page/section into "main" from its own front
            matter with `menus = ["main"]` — no template edit
            required either way. -->
       <a href="/posts/">Posts</a><a href="/archives/">Archives</a><a href="/about/">About</a>
     </nav>
-    <div class="header-right">
-      
-      <button class="search-trigger" onclick="openSearch()" title="Search">
+    <div class="stack search-and-theme">
+      <!---->
+      <button class="search-trigger outline" onclick="openSearch()" title="Search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <span>Search</span>
         <kbd>&#8984;K</kbd>
@@ -50,7 +50,6 @@
   <svg class="tt-dark" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.4 9.9A5.8 5.8 0 0 1 6.1 2.6a5.8 5.8 0 1 0 7.3 7.3z" fill="currentColor"/></svg>
 </button>
     </div>
-  </div>
 </header>
 <div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
   <div class="search-modal">
@@ -65,7 +64,7 @@
 <div class="blog-container">
   <main id="main" class="blog-main">
     <header class="home-hero">
-      <h1 class="home-title">My Blog</h1>
+      <h1 class="home-title">Mike&#39;s thoughts (Main page)</h1>
       <p class="home-tagline">Welcome to my personal blog powered by Hwaro.</p>
       <div class="home-intro"><p>A blog powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a>. Browse posts by <a href="/tags/">Tags</a>, <a href="/categories/">Categories</a>, or <a href="/authors/">Authors</a>.</p>
 </div>
@@ -99,7 +98,7 @@
             <time class="post-date" datetime="2026-08-18">2026-08-18</time>
             <div class="post-item-body">
               <h3 class="post-title"><a href="http://127.0.0.1:3000/posts/thoughts-on-lucky/">Thoughts on Lucky</a></h3>
-              <p class="post-excerpt">Where this blog starts, and how to make it yours.</p>
+              <p class="post-excerpt">My thoughts on the Lucky web framework.</p>
             </div>
           </li>
         
@@ -118,7 +117,7 @@
       <p class="home-more"><a href="http://127.0.0.1:3000/posts/">View all posts</a></p>
     </section>
     <footer class="blog-footer">
-      <p>My Blog · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
+      <p>Mike&#39;s thoughts (Main page) · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
     </footer>
   </main>
 </div>

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to my personal blog powered by Hwaro.">
-  <title>Tags: crystal - My Blog</title>
+  <title>Tags: crystal - Mike&#39;s thoughts (Main page)</title>
   <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:3000/favicon.svg">
   <script>(function(){try{var t=localStorage.getItem("hwaro-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})()</script>
   <meta property="og:title" content="Tags: crystal">
@@ -20,26 +20,26 @@
   
   
   <link rel="stylesheet" href="http://127.0.0.1:3000/css/pico.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css">
   
   
   
   
 </head>
 <body data-section="tags">
-  <a class="skip-link" href="#main">Skip to content</a>
-<header class="container">
-  <div class="blog-header-inner">
-    <a href="http://127.0.0.1:3000/" class="logo">My Blog</a>
-    <nav>
+<header class="slim">
+    <nav class="stack">
+        <a href="http://127.0.0.1:3000/" class="logo">Mike&#39;s thoughts (Main page)</a>
+
       <!-- Add/reorder links via [[menus.main]] in config.toml, or
            register a page/section into "main" from its own front
            matter with `menus = ["main"]` — no template edit
            required either way. -->
       <a href="/posts/">Posts</a><a href="/archives/">Archives</a><a href="/about/">About</a>
     </nav>
-    <div class="header-right">
-      
-      <button class="search-trigger" onclick="openSearch()" title="Search">
+    <div class="stack search-and-theme">
+      <!---->
+      <button class="search-trigger outline" onclick="openSearch()" title="Search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <span>Search</span>
         <kbd>&#8984;K</kbd>
@@ -50,7 +50,6 @@
   <svg class="tt-dark" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.4 9.9A5.8 5.8 0 0 1 6.1 2.6a5.8 5.8 0 1 0 7.3 7.3z" fill="currentColor"/></svg>
 </button>
     </div>
-  </div>
 </header>
 <div class="search-overlay" id="searchOverlay" onclick="if(event.target===this)closeSearch()">
   <div class="search-modal">
@@ -71,7 +70,7 @@
 </ul>
 
     <footer class="blog-footer">
-      <p>My Blog · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
+      <p>Mike&#39;s thoughts (Main page) · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
     </footer>
   </main>
 </div>

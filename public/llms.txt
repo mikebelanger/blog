@@ -1,10 +1,10 @@
-# My Blog
+# Mike's thoughts (Main page)
 
 > Welcome to my personal blog powered by Hwaro.
 
 ## Pages
 
-- [My Blog](http://127.0.0.1:3000/): A blog powered by Hwaro: posts, archives, and tags.
+- [Mike's thoughts (Main page)](http://127.0.0.1:3000/): A blog powered by Hwaro: posts, archives, and tags.
 - [About](http://127.0.0.1:3000/about/): A short introduction to this blog and its author.
 - [Archives](http://127.0.0.1:3000/archives/): Every blog post, sorted by date.
 
@@ -13,5 +13,5 @@
 - [Getting Started with Hwaro](http://127.0.0.1:3000/posts/getting-started-with-hwaro/): A beginner's guide to building websites with Hwaro.
 - [Hello World](http://127.0.0.1:3000/posts/hello-world/): Where this blog starts, and how to make it yours.
 - [Markdown Tips and Tricks](http://127.0.0.1:3000/posts/markdown-tips/): Learn useful Markdown formatting techniques for your blog posts.
-- [Thoughts on Lucky](http://127.0.0.1:3000/posts/thoughts-on-lucky/): Where this blog starts, and how to make it yours.
+- [Thoughts on Lucky](http://127.0.0.1:3000/posts/thoughts-on-lucky/): My thoughts on the Lucky web framework.
 
