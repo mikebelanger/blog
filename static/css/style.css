@@ -4,10 +4,22 @@
     --border: light-dark(#e3dbcf, #362e29);
     --border-width: 1px;
     --scrim: light-dark(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+    --pico-typography-spacing-vertical: var(--page-spread);
+    --pico-form-element-spacing-vertical: var(--page-spread);
+    --pico-form-element-spacing-horizontal: var(--page-spread);
+
     height: 100%;
 
-    h1, h2, h3, h4, h5, h6, p, a, span {
-        font-family: Monospace;
+    h1, h2, h3, h4, h5, h6, p, span, a {
+        font-family: var(--pico-font-family-sans-serif);
+    }
+
+    code, code > * {
+        font-family: var(--pico-font-family-monospace);
+    }
+
+    button {
+      --pico-font-weight: 700;
     }
 }
 
@@ -30,7 +42,7 @@ nav.stack {
     align-items: center;
     justify-content: space-between;
     gap: var(--page-spread);
-    font-size: larger;
+    font-size: calc(var(--page-spread) * 0.5);
 }
 
 .slim, footer.blog-footer {
@@ -122,7 +134,7 @@ main > p,
 .post-nav-label
 {
     font-style: italic;
-    font-size: medium !important;
+    font-size: 0.75rem !important;
 }
 
 /* Search overlay */
@@ -178,6 +190,10 @@ footer {
 
 footer > p {
     margin: unset;
+}
+
+ul.section-list {
+    padding-left: 1rem;
 }
 
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--bg-raised); } }
