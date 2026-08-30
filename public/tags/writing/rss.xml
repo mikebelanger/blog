@@ -20,6 +20,11 @@
 <h2 id="code-blocks">Code Blocks</h2>
 <p>Use triple backticks for code blocks:</p>
 <pre data-copy="true"><code class="language-crystal hljs">puts <span class="hljs-string">&quot;</span><span class="hljs-string">Hello from Crystal!</span><span class="hljs-string">&quot;</span><span class="hljs-string"></span>
+
+<span class="hljs-keyword">class</span> <span class="hljs-variable constant_">SomeClass</span>
+  <span class="hljs-keyword">def</span> <span class="hljs-variable">initialize</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
 </code></pre>
 <h2 id="lists">Lists</h2>
 <p>Ordered lists:</p>

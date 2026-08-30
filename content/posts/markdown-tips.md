@@ -21,6 +21,11 @@ Use triple backticks for code blocks:
 
 ```crystal
 puts "Hello from Crystal!"
+
+class SomeClass
+  def initialize
+  end
+end
 ```
 
 ## Lists

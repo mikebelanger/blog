@@ -13,11 +13,11 @@
         {% for p in site.pages | selectattr("date") | rejectattr("is_index") | rejectattr("draft") | selectattr("language", "equalto", page_language) | sort(attribute="date", reverse=true) %}
         {% if loop.index <= 5 %}
           <li class="post-item">
-            <time class="post-date" datetime="{{ p.date }}">{{ p.date }}</time>
             <div class="post-item-body">
               <h3 class="post-title">
                   <a href="{{ base_url }}{{ p.url }}">{{ p.title | e }}</a>
               </h3>
+              <time class="post-date" datetime="{{ p.date }}">{{ p.date }}</time>
               {% if p.description %}<p class="post-excerpt">{{ p.description | e }}</p>{% endif %}
             </div>
           </li>
