@@ -32,6 +32,10 @@
     button {
       --pico-font-weight: 700;
     }
+
+    time {
+        font-style: italic;
+    }
 }
 
 /* Code */
@@ -168,7 +172,9 @@ article.post {
 
 header.post-header {
     background-color: unset;
-    margin-bottom: var(--page-spread);
+    margin-bottom: calc(var(--page-spread) * 0.5);
+    padding-bottom: calc(var(--page-spread) * 0.5);
+    border-bottom-width: 2px;
 }
 
 h1 {
@@ -228,6 +234,19 @@ main > p,
   padding-top: 12vh;
 }
 
+ul.post-list, ul.section-list {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li.post-item, ul.section-list > li {
+    list-style: none !important;
+}
+
+.post-title {
+    margin-bottom: unset;ccccccccccc
+}
+
 .search-overlay.active { display: flex; }
 
 /* Search overlay */
@@ -270,8 +289,40 @@ footer > p {
     margin: unset;
 }
 
+/* Tags — quiet outline pills that take the ember tint on hover
+   instead of flipping to a solid fill. */
+.tag {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    padding: 0.15rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border: 1px solid var(--border);
+    transition:
+        color var(--transition),
+        border-color var(--transition),
+        background var(--transition),
+        transform 0.1s var(--ease-out);
+}
+
+.tag:hover {
+    background: var(--primary-tint);
+    color: var(--primary-strong);
+    border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+    text-decoration: none;
+}
+
+.tag:active {
+    transform: scale(0.96);
+}
+
+/* Section list */
 ul.section-list {
-    padding-left: 1rem;
+    list-style: none;
+    padding: 0;
 }
 
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--bg-raised); } }
