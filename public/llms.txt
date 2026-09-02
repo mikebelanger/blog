@@ -9,6 +9,7 @@
 
 ## Posts
 
+- [Mixing instances of parent and child in Crystal](http://127.0.0.1:3000/posts/crystal_oo_types/): My thoughts on the Lucky web framework.
 - [Getting Started with Hwaro](http://127.0.0.1:3000/posts/getting-started-with-hwaro/): A beginner's guide to building websites with Hwaro.
 - [Hello World](http://127.0.0.1:3000/posts/hello-world/): Where this blog starts, and how to make it yours.
 - [Markdown Tips and Tricks](http://127.0.0.1:3000/posts/markdown-tips/): Learn useful Markdown formatting techniques for your blog posts.
