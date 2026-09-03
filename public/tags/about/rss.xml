@@ -9,10 +9,98 @@
       <title>About</title>
       <link>http://127.0.0.1:3000/about/</link>
       <guid>http://127.0.0.1:3000/about/</guid>
-      <description>A short introduction to this blog and its author.</description>
-      <content:encoded><![CDATA[<p>Welcome! This blog runs on <a href="https://github.com/hahwul/hwaro">Hwaro</a>, a static site generator written in Crystal.</p>
-<h2 id="make-it-yours">Make it yours</h2>
-<p>Edit <code>content/about.md</code> and introduce yourself in a paragraph or two: who writes here, what you write about, and where readers can reach you. One honest paragraph beats any template text.</p>
+      <description>Mike Belanger — Full-stack developer based in Ottawa, Canada.</description>
+      <content:encoded><![CDATA[<p><img src="http://127.0.0.1:3000/img/md_mikeb.jpg" alt="" /></p>
+<p><a href="mailto:mikebelanger@fastmail.com">Email</a> · <a href="https://www.linkedin.com/in/mike-belanger-84035651/">LinkedIn</a> · <a href="https://github.com/mikebelanger">GitHub</a> · <a href="http://127.0.0.1:3000/files/MikeBelanger_Resume.pdf">Resume (PDF)</a></p>
+<h3 id="about">About</h3>
+<p>I'm a full-stack developer with 8 years of professional experience. I'm experienced in building frontends with React and &quot;vanilla&quot; javascript. I'm also experienced building and maintaining backends with Ruby on Rails, Node.js (Express), and Python (Flask). I've obtained Canadian security clearances (Nato, &quot;secret&quot;).</p>
+<h3 id="skills">Skills</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontend</td>
+<td>React &amp; React Native, TypeScript, Angular, Redux</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Node.js, Python, Ruby on Rails, REST APIs</td>
+</tr>
+<tr>
+<td>Testing &amp; Tools</td>
+<td>Cypress, Puppeteer, Vitest</td>
+</tr>
+<tr>
+<td>Geospatial</td>
+<td>OpenLayers, Leaflet, QGIS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="experience">Experience</h3>
+<h4 id="software-developer">Software Developer</h4>
+<h6 id="kongsberg-geospatial-may-2024-present-ottawa-canada"><a href="https://www.kongsberggeospatial.com">Kongsberg Geospatial</a> · May 2024 – Present · Ottawa, Canada</h6>
+<ul>
+<li>Obtained &quot;Secret&quot; security clearance.</li>
+<li>Develop React-based frontends with OpenLayers in TypeScript, prioritizing user experience and maintainable code.</li>
+<li>Modified Node.js backend to interface with various microservices, ensuring code maintainability.</li>
+</ul>
+<h4 id="software-developer-1">Software Developer</h4>
+<h6 id="imrsv-data-labs-dec-2020-aug-2023-ottawa-canada"><a href="https://www.imrsv.ai">IMRSV Data Labs</a> · Dec 2020 – Aug 2023 · Ottawa, Canada</h6>
+<ul>
+<li>Obtained Canadian security clearance.</li>
+<li>Created React-based web interfaces in TypeScript for classified defense projects, focusing on intuitive UX and maintainable code.</li>
+<li>Scoped out the implementation of various geospatial related pages.</li>
+<li>Enhanced React Native mobile interfaces for a retail workforce application.</li>
+<li>Collaborated on backend development using Python and Node.js, integrating APIs for seamless frontend-backend communication.</li>
+</ul>
+<h4 id="junior-developer">Junior Developer</h4>
+<h6 id="weather-telematics-inc-july-2017-october-2017-oct-2018-mar-2020-ottawa"><a href="https://www.weathertelematics.com/">Weather Telematics Inc.</a> · July 2017 – October 2017, Oct 2018 – Mar 2020 · Ottawa</h6>
+<ul>
+<li>Analyzed weather and traffic data using Apache Spark with Python and Scala scripts for real-time driver notifications.</li>
+<li>Used QGIS to segment Autobahn routes into GPS points for road weather condition modeling (proof of concept for Daimler AG).</li>
+<li>Implemented functionality for a Single Page Application built with Angular and Leaflet for weather predictions and road conditions.</li>
+</ul>
+<h4 id="junior-developer-1">Junior Developer</h4>
+<h6 id="fluent-solutions-inc-nov-2017-oct-2018-ottawa-canada"><a href="https://www.fluentsolutions.com/">Fluent Solutions Inc.</a> · Nov 2017 – Oct 2018 · Ottawa, Canada</h6>
+<ul>
+<li>Took ownership of entire Ruby on Rails projects and worked directly with customers on requirements.</li>
+<li>Developed websites using Ruby on Rails, Bootstrap, Material Design, and Angular.js with a TDD approach.</li>
+<li>Wrote frontend code with JavaScript, TypeScript, and CoffeeScript.</li>
+<li>Designed UI mockups using Inkscape and Pixelmator.</li>
+</ul>
+<h4 id="workshop-facilitator">Workshop Facilitator</h4>
+<h6 id="thespace-ottawa-may-2017-mar-2020-ottawa-canada"><a href="https://www.thespaceottawa.ca/">theSpace Ottawa</a> · May 2017 – Mar 2020 · Ottawa, Canada</h6>
+<ul>
+<li>Taught Graphics Design Workshops using Blender, Krita, Goxel and MagicaVoxel.</li>
+<li>Created learning material and adapted workshops for young adults diagnosed with mental disabilities.</li>
+</ul>
+<h3 id="education">Education</h3>
+<h4 id="carleton-university">Carleton University</h4>
+<h6 id="bachelor-of-cognitive-science-2010-2014">Bachelor of Cognitive Science · 2010 – 2014</h6>
+<ul>
+<li>Co-authored a peer-reviewed journal publication.</li>
+<li>Implemented an attentional model (Emergic Network Architecture) for an AI system using Python, which simulated eye-tracking movements.</li>
+<li>Established a revision control system (git) for the AI model's codebase.</li>
+<li>Documented various wiki articles regarding the AI model.</li>
+</ul>
+<h4 id="algonquin-college-of-applied-arts-and-technology">Algonquin College of Applied Arts and Technology</h4>
+<h6 id="diploma-animation-interactive-technology-video-graphics-and-special-effects-2004-2007">Diploma, Animation, Interactive Technology, Video Graphics and Special Effects · 2004 – 2007</h6>
+<ul>
+<li>Became proficient with Blender, and some Blender Python.</li>
+<li>Got familiar with Maya and Adobe Photoshop.</li>
+</ul>
+<h3 id="certifications-publications">Certifications &amp; Publications</h3>
+<ul>
+<li>edX Verified Certificate for HTML5 Introduction</li>
+<li>edX Verified Certificate for Systematic Program Design – Part 1</li>
+<li>An Introduction to Interactive Programming in Python (Part 1)</li>
+<li><em>Publication:</em> WikiSilo: A Self-organizing, Crowd Sourcing System for Interdisciplinary Science</li>
+</ul>
 ]]></content:encoded>
       <category>about</category>
       <category>pages</category>

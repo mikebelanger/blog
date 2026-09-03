@@ -5,7 +5,7 @@
 ## Pages
 
 - [Mike's Meanderings](http://127.0.0.1:3000/): A blog powered by Hwaro: posts, archives, and tags.
-- [About](http://127.0.0.1:3000/about/): A short introduction to this blog and its author.
+- [About](http://127.0.0.1:3000/about/): Mike Belanger — Full-stack developer based in Ottawa, Canada.
 
 ## Posts
 

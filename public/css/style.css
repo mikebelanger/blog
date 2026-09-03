@@ -25,6 +25,11 @@
         font-family: var(--pico-font-family-sans-serif);
     }
 
+    h6 {
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+
     code, code > * {
         font-family: var(--pico-font-family-monospace);
     }
@@ -123,6 +128,8 @@ nav.stack {
     justify-content: space-between;
     gap: var(--page-spread);
     font-size: calc(var(--page-spread) * 0.5);
+    width: auto;
+    gap: var(--page-spread);
 }
 
 .slim, footer.blog-footer {
@@ -326,3 +333,10 @@ ul.section-list {
 }
 
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--bg-raised); } }
+
+
+/* About section */
+
+#about, #skills, #experience, #software-developer, #software-developer-1, #junior-developer, #junior-developer-1, #carleton-university, #algonquin-college-of-applied-arts-and-technology {
+    margin-bottom: unset;
+}
