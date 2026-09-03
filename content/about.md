@@ -7,28 +7,34 @@ description = "Mike Belanger — Full-stack developer based in Ottawa, Canada."
 
 {% two_column() %}
 
+{% column(id="about_me_picture") %}
 ![](/img/md_mikeb.jpg)
 
 [Email](mailto:mikebelanger@fastmail.com) · [LinkedIn](https://www.linkedin.com/in/mike-belanger-84035651/) · [GitHub](https://github.com/mikebelanger) · [Resume (PDF)](/files/MikeBelanger_Resume.pdf)
+{% end %}
 
-### About
+{% column(id="about_me_bio") %}
+I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with React and "vanilla" javascript. I'm also experienced building and maintaining backends with Ruby on Rails, Node.js (Express), and Python (Flask). I've obtained Canadian security clearances (NATO, "secret").
+{% end %}
 
-I'm a full-stack developer with 8 years of professional experience. I'm experienced in building frontends with React and "vanilla" javascript. I'm also experienced building and maintaining backends with Ruby on Rails, Node.js (Express), and Python (Flask). I've obtained Canadian security clearances (Nato, "secret").
-
-### Skills
-
-| Category | Skills |
-|----------|--------|
-| Frontend | React & React Native, TypeScript, Angular, Redux |
-| Backend | Node.js, Python, Ruby on Rails, REST APIs |
-| Testing & Tools | Cypress, Puppeteer, Vitest |
-| Geospatial | OpenLayers, Leaflet, QGIS |
-
+{% column(id="about_me_skills") %}
+<table>
+  <thead>
+    <tr><th>Category</th><th>Skills</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Frontend</td><td>React &amp; React Native, TypeScript, Angular, Redux</td></tr>
+    <tr><td>Backend</td><td>Node.js, Python, Ruby on Rails, REST APIs</td></tr>
+    <tr><td>Testing &amp; Tools</td><td>Cypress, Puppeteer, Vitest</td></tr>
+    <tr><td>Geospatial</td><td>OpenLayers, Leaflet, QGIS</td></tr>
+  </tbody>
+</table>
+{% end %}
 {% end %}
 
 ### Experience
-
-#### Software Developer
+---
+##### Software Developer
 
 ###### [Kongsberg Geospatial](https://www.kongsberggeospatial.com) · May 2024 – Present · Ottawa, Canada
 
@@ -71,7 +77,7 @@ I'm a full-stack developer with 8 years of professional experience. I'm experien
 - Created learning material and adapted workshops for young adults diagnosed with mental disabilities.
 
 ### Education
-
+---
 #### Carleton University
 
 ###### Bachelor of Cognitive Science · 2010 – 2014
@@ -89,7 +95,7 @@ I'm a full-stack developer with 8 years of professional experience. I'm experien
 - Got familiar with Maya and Adobe Photoshop.
 
 ### Certifications & Publications
-
+---
 - edX Verified Certificate for HTML5 Introduction
 - edX Verified Certificate for Systematic Program Design – Part 1
 - An Introduction to Interactive Programming in Python (Part 1)

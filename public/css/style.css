@@ -25,9 +25,16 @@
         font-family: var(--pico-font-family-sans-serif);
     }
 
+    h3 {
+        padding-bottom: unset;
+        margin-bottom: unset;
+    }
+
     h6 {
         margin-top: unset;
         margin-bottom: unset;
+        font-style: italic;
+        font-weight: normal;
     }
 
     code, code > * {
@@ -184,6 +191,11 @@ header.post-header {
     border-bottom-width: 2px;
 }
 
+hr {
+    margin-top: unset;
+    padding-top: unset;
+}
+
 h1 {
     margin: unset;
 }
@@ -337,16 +349,33 @@ ul.section-list {
 
 /* About section */
 
-#about, #skills, #experience, #software-developer, #software-developer-1, #junior-developer, #junior-developer-1, #carleton-university, #algonquin-college-of-applied-arts-and-technology {
+#about, #skills, #experience, #software-developer, #software-developer-1, #junior-developer, #junior-developer-1, #carleton-university, #algonquin-college-of-applied-arts-and-technology, #workshop-facilitator {
     margin-bottom: unset;
 }
 
 div.two_column {
     display: flex;
     flex-direction: row;
+    gap: calc(0.5 * var(--page-spread));
 }
 
 div.two_column  > *{
     display: flex;
     flex-direction: column;
+}
+
+section#about_me_picture {
+    flex: 1;
+}
+
+section#about_me_bio {
+    flex: 1;
+}
+
+section#about_me_skills {
+    flex: 2;
+}
+
+section#about_me_picture > p > img {
+    border-radius: 1em;
 }
