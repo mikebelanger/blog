@@ -5,6 +5,8 @@ categories = ["pages"]
 description = "Mike Belanger — Full-stack developer based in Ottawa, Canada."
 +++
 
+{% two_column() %}
+
 ![](/img/md_mikeb.jpg)
 
 [Email](mailto:mikebelanger@fastmail.com) · [LinkedIn](https://www.linkedin.com/in/mike-belanger-84035651/) · [GitHub](https://github.com/mikebelanger) · [Resume (PDF)](/files/MikeBelanger_Resume.pdf)
@@ -21,6 +23,8 @@ I'm a full-stack developer with 8 years of professional experience. I'm experien
 | Backend | Node.js, Python, Ruby on Rails, REST APIs |
 | Testing & Tools | Cypress, Puppeteer, Vitest |
 | Geospatial | OpenLayers, Leaflet, QGIS |
+
+{% end %}
 
 ### Experience
 
