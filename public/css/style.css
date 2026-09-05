@@ -145,7 +145,9 @@ nav.stack {
 }
 
 .search-and-theme {
-    justify-content: flex-end !important;
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-end;
 }
 
 .search-and-theme > * {
@@ -349,7 +351,17 @@ ul.section-list {
 
 /* About section */
 
-#about, #skills, #experience, #software-developer, #software-developer-1, #junior-developer, #junior-developer-1, #carleton-university-2010-2014, #bachelor-of-cognitive-science, #ontario-college-advanced-diploma, #workshop-facilitator {
+#about,
+#skills,
+#experience,
+#software-developer,
+#software-developer-1,
+#junior-developer,
+#junior-developer-1,
+#carleton-university-2010-2014,
+#bachelor-of-cognitive-science,
+#ontario-college-advanced-diploma,
+#workshop-facilitator {
     margin-bottom: unset;
 }
 
@@ -364,18 +376,32 @@ div.two_column  > *{
     flex-direction: column;
 }
 
-section#about_me_picture {
-    flex: 1;
-}
-
 section#about_me_bio {
-    flex: 1;
+    flex: 1.2;
 }
 
 section#about_me_skills {
-    flex: 2;
+    flex: 1;
 }
 
-section#about_me_picture > p > img {
-    border-radius: 1em;
+section#about_me_bio > p > img {
+	float: left;
+	margin-right: calc(var(--page-spread) * 0.5);
+	border-radius: 1em;
+}
+
+@media screen and (width <= 500px) {
+    section#about_me_bio > p > img {
+        width: 200px;
+        height: auto;
+    }
+    .stack {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .search-and-theme {
+        flex-direction: column;
+        align-items: flex-end !important;
+        justify-content: space-between !important;
+    }
 }

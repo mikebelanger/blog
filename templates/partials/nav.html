@@ -8,7 +8,7 @@
            required either way. -->
       {% for item in get_menu(name="main") %}<a href="{{ item.href }}"{% if item.url | active_path %} aria-current="page"{% endif %}>{{ item.name | e }}</a>{% endfor %}
     </nav>
-    <div class="stack search-and-theme">
+    <div class="search-and-theme">
       <!--{% if page.translations | length > 0 %}
       <nav class="lang-switcher" aria-label="Language">
         {% for t in page.translations %}

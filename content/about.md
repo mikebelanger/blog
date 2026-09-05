@@ -1,5 +1,5 @@
 +++
-title = "About"
+title = "Hi, I'm Mike"
 tags = ["about"]
 categories = ["pages"]
 description = "Mike Belanger — Full-stack developer based in Ottawa, Canada."
@@ -7,30 +7,23 @@ description = "Mike Belanger — Full-stack developer based in Ottawa, Canada."
 
 {% two_column() %}
 
-{% column(id="about_me_picture") %}
+{% column(id="about_me_bio") %}
 ![](/img/md_mikeb.jpg)
+I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with [React](https://react.dev) and "vanilla" [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). I'm also experienced building and maintaining backends with [Ruby on Rails](https://rubyonrails.org), [Node.js](https://nodejs.org) ([Express](https://expressjs.com)), and [Python](https://python.org) ([Flask](https://flask.palletsprojects.com)). I've obtained Canadian security clearances (NATO, "secret").
 
 [Email](mailto:mikebelanger@fastmail.com) · [LinkedIn](https://www.linkedin.com/in/mike-belanger-84035651/) · [GitHub](https://github.com/mikebelanger) · [Resume (PDF)](/files/MikeBelanger_Resume.pdf)
 {% end %}
 
-{% column(id="about_me_bio") %}
-I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with [React](https://react.dev) and "vanilla" [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). I'm also experienced building and maintaining backends with [Ruby on Rails](https://rubyonrails.org), [Node.js](https://nodejs.org) ([Express](https://expressjs.com)), and [Python](https://python.org) ([Flask](https://flask.palletsprojects.com)). I've obtained Canadian security clearances (NATO, "secret").
 {% end %}
 
-{% column(id="about_me_skills") %}
-<table>
-  <thead>
-    <tr><th>Category</th><th>Skills</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Frontend</td><td><a href="https://react.dev">React</a> &amp; <a href="https://reactnative.dev">React Native</a>, <a href="https://typescriptlang.org">TypeScript</a>, <a href="https://angular.dev">Angular</a>, <a href="https://redux.js.org">Redux</a></td></tr>
-    <tr><td>Backend</td><td><a href="https://nodejs.org">Node.js</a>, <a href="https://python.org">Python</a>, <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://restfulapi.net">REST APIs</a></td></tr>
-    <tr><td>Testing &amp; Tools</td><td><a href="https://cypress.io">Cypress</a>, <a href="https://pptr.dev">Puppeteer</a>, <a href="https://vitest.dev">Vitest</a></td></tr>
-    <tr><td>Geospatial</td><td><a href="https://openlayers.org">OpenLayers</a>, <a href="https://leafletjs.com">Leaflet</a>, <a href="https://qgis.org">QGIS</a></td></tr>
-  </tbody>
-</table>
-{% end %}
-{% end %}
+### Skills
+---
+| Category | Skills |
+|----------|--------|
+| Frontend | [React](https://react.dev) & [React Native](https://reactnative.dev), [TypeScript](https://typescriptlang.org), [Angular](https://angular.dev), [Redux](https://redux.js.org) |
+| Backend | [Node.js](https://nodejs.org), [Python](https://python.org), [Ruby on Rails](https://rubyonrails.org), [REST APIs](https://restfulapi.net) |
+| Testing & Tools | [Cypress](https://cypress.io), [Puppeteer](https://pptr.dev), [Vitest](https://vitest.dev) |
+| Geospatial | [OpenLayers](https://openlayers.org), [Leaflet](https://leafletjs.com), [QGIS](https://qgis.org) |
 
 ### Experience
 ---

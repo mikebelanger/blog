@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mike&apos;s Meanderings</title>
-    <link>http://127.0.0.1:3000/</link>
+    <link>http://localhost:3000/</link>
     <description>Welcome to my personal blog powered by Hwaro.</description>
-    <atom:link href="http://127.0.0.1:3000/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown Tips and Tricks</title>
-      <link>http://127.0.0.1:3000/posts/markdown-tips/</link>
-      <guid>http://127.0.0.1:3000/posts/markdown-tips/</guid>
+      <link>http://localhost:3000/posts/markdown-tips/</link>
+      <guid>http://localhost:3000/posts/markdown-tips/</guid>
       <description>Learn useful Markdown formatting techniques for your blog posts.</description>
       <content:encoded><![CDATA[<p>Hwaro uses Markdown for content. Here are some useful formatting tips.</p>
 <h2 id="text-formatting">Text Formatting</h2>
@@ -81,8 +81,8 @@ It can span multiple lines.</p>
     </item>
     <item>
       <title>Getting Started with Hwaro</title>
-      <link>http://127.0.0.1:3000/posts/getting-started-with-hwaro/</link>
-      <guid>http://127.0.0.1:3000/posts/getting-started-with-hwaro/</guid>
+      <link>http://localhost:3000/posts/getting-started-with-hwaro/</link>
+      <guid>http://localhost:3000/posts/getting-started-with-hwaro/</guid>
       <description>A beginner&apos;s guide to building websites with Hwaro.</description>
       <content:encoded><![CDATA[<p>In this post, I'll walk you through the basics of setting up and using Hwaro.</p>
 <h2 id="installation">Installation</h2>
@@ -112,8 +112,8 @@ hwaro serve
     </item>
     <item>
       <title>Hello World</title>
-      <link>http://127.0.0.1:3000/posts/hello-world/</link>
-      <guid>http://127.0.0.1:3000/posts/hello-world/</guid>
+      <link>http://localhost:3000/posts/hello-world/</link>
+      <guid>http://localhost:3000/posts/hello-world/</guid>
       <description>Where this blog starts, and how to make it yours.</description>
       <content:encoded><![CDATA[<p>Every blog starts somewhere, and this one starts here. The site around this post is powered by Hwaro, a fast static site generator written in Crystal.</p>
 <h2 id="what-the-samples-show">What the samples show</h2>
@@ -132,13 +132,13 @@ hwaro serve
     </item>
     <item>
       <title>Thoughts on Lucky</title>
-      <link>http://127.0.0.1:3000/posts/thoughts-on-lucky/</link>
-      <guid>http://127.0.0.1:3000/posts/thoughts-on-lucky/</guid>
+      <link>http://localhost:3000/posts/thoughts-on-lucky/</link>
+      <guid>http://localhost:3000/posts/thoughts-on-lucky/</guid>
       <description>My thoughts on the Lucky web framework.</description>
       <content:encoded><![CDATA[<p><a href="https://rubyonrails.org">Rails</a> got popular for a reason. It provided high-level productivity with just enough flexibility for a whole swath of web applications. Everyone from junior to senior-level devs could ramp up pretty fast. My first developer job was writing Rails applications, and I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.</p>
 <p>Lots of startups owe their initial success to Rails. You could argue they would have succeeded with any framework, but they chose that.</p>
 <p>That said, Rails' language, <a href="https://www.ruby-lang.org/">Ruby</a>, is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But in hiding all that, it made it all the more difficult to understand. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime.</p>
-<p>This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like <a href="http://127.0.0.1:3000/posts/thoughts-on-lucky/quarkus.io">Quarkus</a> to more bleeding edge ones like <a href="https://loco.rs">Loco</a>.</p>
+<p>This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like <a href="http://localhost:3000/posts/thoughts-on-lucky/quarkus.io">Quarkus</a> to more bleeding edge ones like <a href="https://loco.rs">Loco</a>.</p>
 <p>Another one is <a href="https://luckyframework.org/">Lucky</a>.</p>
 <p>Lucky is written in a lesser-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegant. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style channels</a> for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>). It compiles its code into binaries using the same LLVM-backed system as Rust. So you get speedy programs, static analysis, all while retaining a simple syntax.</p>
 ]]></content:encoded>
@@ -151,8 +151,8 @@ hwaro serve
     </item>
     <item>
       <title>Mixing instances of parent and child in Crystal</title>
-      <link>http://127.0.0.1:3000/posts/crystal_oo_types/</link>
-      <guid>http://127.0.0.1:3000/posts/crystal_oo_types/</guid>
+      <link>http://localhost:3000/posts/crystal_oo_types/</link>
+      <guid>http://localhost:3000/posts/crystal_oo_types/</guid>
       <description>My thoughts on the Lucky web framework.</description>
       <content:encoded><![CDATA[<p>I've been getting into <a href="https://crystal-lang.org">Crystal</a> lately.  Its syntax is a near-copy of <a href="https://ruby-lang.org/">Ruby's</a>, but its type system and compile-time checks are extremely strong.  It compiles to LLVM, similar to <a href="http://rust-lang.org">Rust's</a>, making its binaries very performant.</p>
 <p>While the language is fairly readable, its error-messages aren't always clear. I was working on something like this today:</p>

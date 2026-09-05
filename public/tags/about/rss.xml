@@ -6,43 +6,48 @@
     <description>Welcome to my personal blog powered by Hwaro.</description>
     <atom:link href="http://127.0.0.1:3000/tags/about/rss.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
+      <title>Hi, I&apos;m Mike</title>
       <link>http://127.0.0.1:3000/about/</link>
       <guid>http://127.0.0.1:3000/about/</guid>
       <description>Mike Belanger — Full-stack developer based in Ottawa, Canada.</description>
       <content:encoded><![CDATA[<div class="two_column">
     
-<section id=about_me_picture>
+<section id=about_me_bio>
 
-    <p><img src="http://127.0.0.1:3000/img/md_mikeb.jpg" alt="" /></p>
+    <p><img src="http://127.0.0.1:3000/img/md_mikeb.jpg" alt="" />
+I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with <a href="https://react.dev">React</a> and &quot;vanilla&quot; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>. I'm also experienced building and maintaining backends with <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://nodejs.org">Node.js</a> (<a href="https://expressjs.com">Express</a>), and <a href="https://python.org">Python</a> (<a href="https://flask.palletsprojects.com">Flask</a>). I've obtained Canadian security clearances (NATO, &quot;secret&quot;).</p>
 <p><a href="mailto:mikebelanger@fastmail.com">Email</a> · <a href="https://www.linkedin.com/in/mike-belanger-84035651/">LinkedIn</a> · <a href="https://github.com/mikebelanger">GitHub</a> · <a href="http://127.0.0.1:3000/files/MikeBelanger_Resume.pdf">Resume (PDF)</a></p>
 
 </section>
-
-
-<section id=about_me_bio>
-
-    <p>I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with <a href="https://react.dev">React</a> and &quot;vanilla&quot; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>. I'm also experienced building and maintaining backends with <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://nodejs.org">Node.js</a> (<a href="https://expressjs.com">Express</a>), and <a href="https://python.org">Python</a> (<a href="https://flask.palletsprojects.com">Flask</a>). I've obtained Canadian security clearances (NATO, &quot;secret&quot;).</p>
-
-</section>
-
-
-<section id=about_me_skills>
-
-    <table>
-  <thead>
-    <tr><th>Category</th><th>Skills</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Frontend</td><td><a href="https://react.dev">React</a> &amp; <a href="https://reactnative.dev">React Native</a>, <a href="https://typescriptlang.org">TypeScript</a>, <a href="https://angular.dev">Angular</a>, <a href="https://redux.js.org">Redux</a></td></tr>
-    <tr><td>Backend</td><td><a href="https://nodejs.org">Node.js</a>, <a href="https://python.org">Python</a>, <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://restfulapi.net">REST APIs</a></td></tr>
-    <tr><td>Testing &amp; Tools</td><td><a href="https://cypress.io">Cypress</a>, <a href="https://pptr.dev">Puppeteer</a>, <a href="https://vitest.dev">Vitest</a></td></tr>
-    <tr><td>Geospatial</td><td><a href="https://openlayers.org">OpenLayers</a>, <a href="https://leafletjs.com">Leaflet</a>, <a href="https://qgis.org">QGIS</a></td></tr>
-  </tbody>
-</table>
-
-</section>
 </div>
+<h3 id="skills">Skills</h3>
+<hr />
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontend</td>
+<td><a href="https://react.dev">React</a> &amp; <a href="https://reactnative.dev">React Native</a>, <a href="https://typescriptlang.org">TypeScript</a>, <a href="https://angular.dev">Angular</a>, <a href="https://redux.js.org">Redux</a></td>
+</tr>
+<tr>
+<td>Backend</td>
+<td><a href="https://nodejs.org">Node.js</a>, <a href="https://python.org">Python</a>, <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://restfulapi.net">REST APIs</a></td>
+</tr>
+<tr>
+<td>Testing &amp; Tools</td>
+<td><a href="https://cypress.io">Cypress</a>, <a href="https://pptr.dev">Puppeteer</a>, <a href="https://vitest.dev">Vitest</a></td>
+</tr>
+<tr>
+<td>Geospatial</td>
+<td><a href="https://openlayers.org">OpenLayers</a>, <a href="https://leafletjs.com">Leaflet</a>, <a href="https://qgis.org">QGIS</a></td>
+</tr>
+</tbody>
+</table>
 <h3 id="experience">Experience</h3>
 <hr />
 <h5 id="software-developer">Software Developer</h5>
