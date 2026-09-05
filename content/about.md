@@ -42,7 +42,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 - Develop React-based frontends with OpenLayers in TypeScript, prioritizing user experience and maintainable code.
 - Modified Node.js backend to interface with various microservices, ensuring code maintainability.
 
-#### Software Developer
+##### Software Developer
 
 ###### [IMRSV Data Labs](https://www.imrsv.ai) · Dec 2020 – Aug 2023 · Ottawa, Canada
 
@@ -52,7 +52,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 - Enhanced React Native mobile interfaces for a retail workforce application.
 - Collaborated on backend development using Python and Node.js, integrating APIs for seamless frontend-backend communication.
 
-#### Junior Developer
+##### Junior Developer
 
 ###### [Weather Telematics Inc.](https://www.weathertelematics.com/) · July 2017 – October 2017, Oct 2018 – Mar 2020 · Ottawa
 
@@ -60,7 +60,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 - Used QGIS to segment Autobahn routes into GPS points for road weather condition modeling (proof of concept for Daimler AG).
 - Implemented functionality for a Single Page Application built with Angular and Leaflet for weather predictions and road conditions.
 
-#### Junior Developer
+##### Junior Developer
 
 ###### [Fluent Solutions Inc.](https://www.fluentsolutions.com/) · Nov 2017 – Oct 2018 · Ottawa, Canada
 
@@ -69,7 +69,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 - Wrote frontend code with JavaScript, TypeScript, and CoffeeScript.
 - Designed UI mockups using Inkscape and Pixelmator.
 
-#### Workshop Facilitator
+##### Workshop Facilitator
 
 ###### [theSpace Ottawa](https://www.thespaceottawa.ca/) · May 2017 – Mar 2020 · Ottawa, Canada
 
@@ -78,7 +78,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 
 ### Education
 ---
-#### [Carleton University](https://carleton.ca)
+##### [Carleton University](https://carleton.ca)
 
 ###### Bachelor of Cognitive Science · 2010 – 2014
 
@@ -87,7 +87,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 - Established a revision control system (git) for the AI model's codebase.
 - Documented various wiki articles regarding the AI model.
 
-#### [Algonquin College of Applied Arts and Technology](https://algonquincollege.com)
+##### [Algonquin College of Applied Arts and Technology](https://algonquincollege.com)
 
 ###### Diploma, Animation, Interactive Technology, Video Graphics and Special Effects · 2004 – 2007
 

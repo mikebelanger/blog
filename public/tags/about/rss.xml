@@ -52,7 +52,7 @@
 <li>Develop React-based frontends with OpenLayers in TypeScript, prioritizing user experience and maintainable code.</li>
 <li>Modified Node.js backend to interface with various microservices, ensuring code maintainability.</li>
 </ul>
-<h4 id="software-developer-1">Software Developer</h4>
+<h5 id="software-developer-1">Software Developer</h5>
 <h6 id="imrsv-data-labs-dec-2020-aug-2023-ottawa-canada"><a href="https://www.imrsv.ai">IMRSV Data Labs</a> · Dec 2020 – Aug 2023 · Ottawa, Canada</h6>
 <ul>
 <li>Obtained Canadian security clearance.</li>
@@ -61,14 +61,14 @@
 <li>Enhanced React Native mobile interfaces for a retail workforce application.</li>
 <li>Collaborated on backend development using Python and Node.js, integrating APIs for seamless frontend-backend communication.</li>
 </ul>
-<h4 id="junior-developer">Junior Developer</h4>
+<h5 id="junior-developer">Junior Developer</h5>
 <h6 id="weather-telematics-inc-july-2017-october-2017-oct-2018-mar-2020-ottawa"><a href="https://www.weathertelematics.com/">Weather Telematics Inc.</a> · July 2017 – October 2017, Oct 2018 – Mar 2020 · Ottawa</h6>
 <ul>
 <li>Analyzed weather and traffic data using Apache Spark with Python and Scala scripts for real-time driver notifications.</li>
 <li>Used QGIS to segment Autobahn routes into GPS points for road weather condition modeling (proof of concept for Daimler AG).</li>
 <li>Implemented functionality for a Single Page Application built with Angular and Leaflet for weather predictions and road conditions.</li>
 </ul>
-<h4 id="junior-developer-1">Junior Developer</h4>
+<h5 id="junior-developer-1">Junior Developer</h5>
 <h6 id="fluent-solutions-inc-nov-2017-oct-2018-ottawa-canada"><a href="https://www.fluentsolutions.com/">Fluent Solutions Inc.</a> · Nov 2017 – Oct 2018 · Ottawa, Canada</h6>
 <ul>
 <li>Took ownership of entire Ruby on Rails projects and worked directly with customers on requirements.</li>
@@ -76,7 +76,7 @@
 <li>Wrote frontend code with JavaScript, TypeScript, and CoffeeScript.</li>
 <li>Designed UI mockups using Inkscape and Pixelmator.</li>
 </ul>
-<h4 id="workshop-facilitator">Workshop Facilitator</h4>
+<h5 id="workshop-facilitator">Workshop Facilitator</h5>
 <h6 id="thespace-ottawa-may-2017-mar-2020-ottawa-canada"><a href="https://www.thespaceottawa.ca/">theSpace Ottawa</a> · May 2017 – Mar 2020 · Ottawa, Canada</h6>
 <ul>
 <li>Taught Graphics Design Workshops using Blender, Krita, Goxel and MagicaVoxel.</li>
@@ -84,7 +84,7 @@
 </ul>
 <h3 id="education">Education</h3>
 <hr />
-<h4 id="carleton-university"><a href="https://carleton.ca">Carleton University</a></h4>
+<h5 id="carleton-university"><a href="https://carleton.ca">Carleton University</a></h5>
 <h6 id="bachelor-of-cognitive-science-2010-2014">Bachelor of Cognitive Science · 2010 – 2014</h6>
 <ul>
 <li>Co-authored a peer-reviewed journal publication.</li>
@@ -92,7 +92,7 @@
 <li>Established a revision control system (git) for the AI model's codebase.</li>
 <li>Documented various wiki articles regarding the AI model.</li>
 </ul>
-<h4 id="algonquin-college-of-applied-arts-and-technology"><a href="https://algonquincollege.com">Algonquin College of Applied Arts and Technology</a></h4>
+<h5 id="algonquin-college-of-applied-arts-and-technology"><a href="https://algonquincollege.com">Algonquin College of Applied Arts and Technology</a></h5>
 <h6 id="diploma-animation-interactive-technology-video-graphics-and-special-effects-2004-2007">Diploma, Animation, Interactive Technology, Video Graphics and Special Effects · 2004 – 2007</h6>
 <ul>
 <li>Became proficient with Blender, and some Blender Python.</li>
