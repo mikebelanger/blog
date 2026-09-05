@@ -22,7 +22,7 @@
 
 <section id=about_me_bio>
 
-    <p>I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with React and &quot;vanilla&quot; javascript. I'm also experienced building and maintaining backends with Ruby on Rails, Node.js (Express), and Python (Flask). I've obtained Canadian security clearances (NATO, &quot;secret&quot;).</p>
+    <p>I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with <a href="https://react.dev">React</a> and &quot;vanilla&quot; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>. I'm also experienced building and maintaining backends with <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://nodejs.org">Node.js</a> (<a href="https://expressjs.com">Express</a>), and <a href="https://python.org">Python</a> (<a href="https://flask.palletsprojects.com">Flask</a>). I've obtained Canadian security clearances (NATO, &quot;secret&quot;).</p>
 
 </section>
 
@@ -34,10 +34,10 @@
     <tr><th>Category</th><th>Skills</th></tr>
   </thead>
   <tbody>
-    <tr><td>Frontend</td><td>React &amp; React Native, TypeScript, Angular, Redux</td></tr>
-    <tr><td>Backend</td><td>Node.js, Python, Ruby on Rails, REST APIs</td></tr>
-    <tr><td>Testing &amp; Tools</td><td>Cypress, Puppeteer, Vitest</td></tr>
-    <tr><td>Geospatial</td><td>OpenLayers, Leaflet, QGIS</td></tr>
+    <tr><td>Frontend</td><td><a href="https://react.dev">React</a> &amp; <a href="https://reactnative.dev">React Native</a>, <a href="https://typescriptlang.org">TypeScript</a>, <a href="https://angular.dev">Angular</a>, <a href="https://redux.js.org">Redux</a></td></tr>
+    <tr><td>Backend</td><td><a href="https://nodejs.org">Node.js</a>, <a href="https://python.org">Python</a>, <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://restfulapi.net">REST APIs</a></td></tr>
+    <tr><td>Testing &amp; Tools</td><td><a href="https://cypress.io">Cypress</a>, <a href="https://pptr.dev">Puppeteer</a>, <a href="https://vitest.dev">Vitest</a></td></tr>
+    <tr><td>Geospatial</td><td><a href="https://openlayers.org">OpenLayers</a>, <a href="https://leafletjs.com">Leaflet</a>, <a href="https://qgis.org">QGIS</a></td></tr>
   </tbody>
 </table>
 
@@ -64,7 +64,7 @@
 <h5 id="junior-developer">Junior Developer</h5>
 <h6 id="weather-telematics-inc-july-2017-october-2017-oct-2018-mar-2020-ottawa"><a href="https://www.weathertelematics.com/">Weather Telematics Inc.</a> · July 2017 – October 2017, Oct 2018 – Mar 2020 · Ottawa</h6>
 <ul>
-<li>Analyzed weather and traffic data using Apache Spark with Python and Scala scripts for real-time driver notifications.</li>
+<li>Analyzed weather and traffic data using <a href="https://spark.apache.org">Apache Spark</a> with Python and <a href="https://scala-lang.org">Scala</a> scripts for real-time driver notifications.</li>
 <li>Used QGIS to segment Autobahn routes into GPS points for road weather condition modeling (proof of concept for Daimler AG).</li>
 <li>Implemented functionality for a Single Page Application built with Angular and Leaflet for weather predictions and road conditions.</li>
 </ul>
@@ -72,14 +72,14 @@
 <h6 id="fluent-solutions-inc-nov-2017-oct-2018-ottawa-canada"><a href="https://www.fluentsolutions.com/">Fluent Solutions Inc.</a> · Nov 2017 – Oct 2018 · Ottawa, Canada</h6>
 <ul>
 <li>Took ownership of entire Ruby on Rails projects and worked directly with customers on requirements.</li>
-<li>Developed websites using Ruby on Rails, Bootstrap, Material Design, and Angular.js with a TDD approach.</li>
-<li>Wrote frontend code with JavaScript, TypeScript, and CoffeeScript.</li>
-<li>Designed UI mockups using Inkscape and Pixelmator.</li>
+<li>Developed websites using Ruby on Rails, <a href="https://getbootstrap.com">Bootstrap</a>, <a href="https://m3.material.io">Material Design</a>, and <a href="https://angularjs.org">Angular.js</a> with a TDD approach.</li>
+<li>Wrote frontend code with JavaScript, TypeScript, and <a href="https://coffeescript.org">CoffeeScript</a>.</li>
+<li>Designed UI mockups using <a href="https://inkscape.org">Inkscape</a> and <a href="https://www.pixelmator.com">Pixelmator</a>.</li>
 </ul>
 <h5 id="workshop-facilitator">Workshop Facilitator</h5>
 <h6 id="thespace-ottawa-may-2017-mar-2020-ottawa-canada"><a href="https://www.thespaceottawa.ca/">theSpace Ottawa</a> · May 2017 – Mar 2020 · Ottawa, Canada</h6>
 <ul>
-<li>Taught Graphics Design Workshops using Blender, Krita, Goxel and MagicaVoxel.</li>
+<li>Taught Graphics Design Workshops using <a href="https://www.blender.org">Blender</a>, <a href="https://krita.org">Krita</a>, <a href="https://goxel.xyz">Goxel</a> and <a href="https://ephtracy.github.io/index.html">MagicaVoxel</a>.</li>
 <li>Created learning material and adapted workshops for young adults diagnosed with mental disabilities.</li>
 </ul>
 <h3 id="education">Education</h3>
@@ -89,14 +89,14 @@
 <ul>
 <li>Co-authored a peer-reviewed journal publication.</li>
 <li>Implemented an attentional model (Emergic Network Architecture) for an AI system using Python, which simulated eye-tracking movements.</li>
-<li>Established a revision control system (git) for the AI model's codebase.</li>
+<li>Established a revision control system (<a href="https://git-scm.com">git</a>) for the AI model's codebase.</li>
 <li>Documented various wiki articles regarding the AI model.</li>
 </ul>
 <h5 id="ontario-college-advanced-diploma"><a href="https://www.algonquincollege.com/creative-studies/program/animation/">Ontario College Advanced Diploma</a></h5>
 <h6 id="algonquin-college-of-applied-arts-and-technology-2004-2007"><a href="https://algonquincollege.com">Algonquin College of Applied Arts and Technology</a> · 2004 – 2007</h6>
 <ul>
-<li>Became proficient with Blender, and some Blender Python.</li>
-<li>Got familiar with Maya and Adobe Photoshop.</li>
+<li>Became proficient with <a href="https://blender.org/">Blender</a>, and some Blender Python.</li>
+<li>Got familiar with <a href="https://www.autodesk.com/products/maya">Maya</a> and <a href="https://www.adobe.com/products/photoshop">Adobe Photoshop</a>.</li>
 </ul>
 <h3 id="certifications">Certifications</h3>
 <hr />

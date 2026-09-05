@@ -14,7 +14,7 @@ description = "Mike Belanger — Full-stack developer based in Ottawa, Canada."
 {% end %}
 
 {% column(id="about_me_bio") %}
-I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with React and "vanilla" javascript. I'm also experienced building and maintaining backends with Ruby on Rails, Node.js (Express), and Python (Flask). I've obtained Canadian security clearances (NATO, "secret").
+I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with [React](https://react.dev) and "vanilla" [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript). I'm also experienced building and maintaining backends with [Ruby on Rails](https://rubyonrails.org), [Node.js](https://nodejs.org) ([Express](https://expressjs.com)), and [Python](https://python.org) ([Flask](https://flask.palletsprojects.com)). I've obtained Canadian security clearances (NATO, "secret").
 {% end %}
 
 {% column(id="about_me_skills") %}
@@ -23,10 +23,10 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
     <tr><th>Category</th><th>Skills</th></tr>
   </thead>
   <tbody>
-    <tr><td>Frontend</td><td>React &amp; React Native, TypeScript, Angular, Redux</td></tr>
-    <tr><td>Backend</td><td>Node.js, Python, Ruby on Rails, REST APIs</td></tr>
-    <tr><td>Testing &amp; Tools</td><td>Cypress, Puppeteer, Vitest</td></tr>
-    <tr><td>Geospatial</td><td>OpenLayers, Leaflet, QGIS</td></tr>
+    <tr><td>Frontend</td><td><a href="https://react.dev">React</a> &amp; <a href="https://reactnative.dev">React Native</a>, <a href="https://typescriptlang.org">TypeScript</a>, <a href="https://angular.dev">Angular</a>, <a href="https://redux.js.org">Redux</a></td></tr>
+    <tr><td>Backend</td><td><a href="https://nodejs.org">Node.js</a>, <a href="https://python.org">Python</a>, <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://restfulapi.net">REST APIs</a></td></tr>
+    <tr><td>Testing &amp; Tools</td><td><a href="https://cypress.io">Cypress</a>, <a href="https://pptr.dev">Puppeteer</a>, <a href="https://vitest.dev">Vitest</a></td></tr>
+    <tr><td>Geospatial</td><td><a href="https://openlayers.org">OpenLayers</a>, <a href="https://leafletjs.com">Leaflet</a>, <a href="https://qgis.org">QGIS</a></td></tr>
   </tbody>
 </table>
 {% end %}
@@ -56,7 +56,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 
 ###### [Weather Telematics Inc.](https://www.weathertelematics.com/) · July 2017 – October 2017, Oct 2018 – Mar 2020 · Ottawa
 
-- Analyzed weather and traffic data using Apache Spark with Python and Scala scripts for real-time driver notifications.
+- Analyzed weather and traffic data using [Apache Spark](https://spark.apache.org) with Python and [Scala](https://scala-lang.org) scripts for real-time driver notifications.
 - Used QGIS to segment Autobahn routes into GPS points for road weather condition modeling (proof of concept for Daimler AG).
 - Implemented functionality for a Single Page Application built with Angular and Leaflet for weather predictions and road conditions.
 
@@ -65,15 +65,15 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 ###### [Fluent Solutions Inc.](https://www.fluentsolutions.com/) · Nov 2017 – Oct 2018 · Ottawa, Canada
 
 - Took ownership of entire Ruby on Rails projects and worked directly with customers on requirements.
-- Developed websites using Ruby on Rails, Bootstrap, Material Design, and Angular.js with a TDD approach.
-- Wrote frontend code with JavaScript, TypeScript, and CoffeeScript.
-- Designed UI mockups using Inkscape and Pixelmator.
+- Developed websites using Ruby on Rails, [Bootstrap](https://getbootstrap.com), [Material Design](https://m3.material.io), and [Angular.js](https://angularjs.org) with a TDD approach.
+- Wrote frontend code with JavaScript, TypeScript, and [CoffeeScript](https://coffeescript.org).
+- Designed UI mockups using [Inkscape](https://inkscape.org) and [Pixelmator](https://www.pixelmator.com).
 
 ##### Workshop Facilitator
 
 ###### [theSpace Ottawa](https://www.thespaceottawa.ca/) · May 2017 – Mar 2020 · Ottawa, Canada
 
-- Taught Graphics Design Workshops using Blender, Krita, Goxel and MagicaVoxel.
+- Taught Graphics Design Workshops using [Blender](https://www.blender.org), [Krita](https://krita.org), [Goxel](https://goxel.xyz) and [MagicaVoxel](https://ephtracy.github.io/index.html).
 - Created learning material and adapted workshops for young adults diagnosed with mental disabilities.
 
 ### Education
@@ -84,14 +84,14 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 
 - Co-authored a peer-reviewed journal publication.
 - Implemented an attentional model (Emergic Network Architecture) for an AI system using Python, which simulated eye-tracking movements.
-- Established a revision control system (git) for the AI model's codebase.
+- Established a revision control system ([git](https://git-scm.com)) for the AI model's codebase.
 - Documented various wiki articles regarding the AI model.
 
 ##### [Ontario College Advanced Diploma](https://www.algonquincollege.com/creative-studies/program/animation/)
 ###### [Algonquin College of Applied Arts and Technology](https://algonquincollege.com) · 2004 – 2007
 
-- Became proficient with Blender, and some Blender Python.
-- Got familiar with Maya and Adobe Photoshop.
+- Became proficient with [Blender](https://blender.org/), and some Blender Python.
+- Got familiar with [Maya](https://www.autodesk.com/products/maya) and [Adobe Photoshop](https://www.adobe.com/products/photoshop).
 
 ### Certifications
 ---
