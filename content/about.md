@@ -78,25 +78,27 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 
 ### Education
 ---
-##### [Carleton University](https://carleton.ca)
 
-###### Bachelor of Cognitive Science · 2010 – 2014
+##### [Bachelor of Cognitive Science](https://carleton.ca/cognitivescience/bachelors-of-cognitive-science/)
+###### [Carleton University](https://carleton.ca) · 2010 – 2014
 
 - Co-authored a peer-reviewed journal publication.
 - Implemented an attentional model (Emergic Network Architecture) for an AI system using Python, which simulated eye-tracking movements.
 - Established a revision control system (git) for the AI model's codebase.
 - Documented various wiki articles regarding the AI model.
 
-##### [Algonquin College of Applied Arts and Technology](https://algonquincollege.com)
-
-###### Diploma, Animation, Interactive Technology, Video Graphics and Special Effects · 2004 – 2007
+##### [Ontario College Advanced Diploma](https://www.algonquincollege.com/creative-studies/program/animation/)
+###### [Algonquin College of Applied Arts and Technology](https://algonquincollege.com) · 2004 – 2007
 
 - Became proficient with Blender, and some Blender Python.
 - Got familiar with Maya and Adobe Photoshop.
 
-### Certifications & Publications
+### Certifications
 ---
-- edX Verified Certificate for HTML5 Introduction
-- edX Verified Certificate for Systematic Program Design – Part 1
-- An Introduction to Interactive Programming in Python (Part 1)
-- *Publication:* WikiSilo: A Self-organizing, Crowd Sourcing System for Interdisciplinary Science
+- [edX Verified Certificate for HTML5 Introduction](https://courses.edx.org/certificates/64f2aff2b696498eae87aabf56021fce)
+- [edX Verified Certificate for Systematic Program Design – Part 1](https://www.linkedin.com/safety/go/?url=https%3A%2F%2Fs3.amazonaws.com%2Fverify.edx.org%2Fdownloads%2Fbac48975d9754ac6a6ecca691eb6e809%2FCertificate.pdf&urlhash=AKvL&mt=d0xQvep6c_MtZ2LdnXRMjAq059U0Kf1N3Fdje5MSKgp6eOct_NOgqn6sX5RkXnDcHr5_nRkAq-6Puc615eyGtYE3_aA&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3Bo%2FUwvhaTS4SeVA6AirrU%2BQ%3D%3D)
+- [Coursera Verified The Bits and Bytes of Computer Networking](https://www.coursera.org/account/accomplishments/verify/C44XHMG2WUDL)
+
+### Publications
+---
+- [WikiSilo: A Self-organizing, Crowd Sourcing System for Interdisciplinary Science](https://www.researchgate.net/publication/264551706_WikiSilo_A_Self-organizing_Crowd_Sourcing_System_for_Interdisciplinary_Science?channel=doi&linkId=53e53c570cf25d674e9969e7&showFulltext=true)
