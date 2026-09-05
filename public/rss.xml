@@ -135,17 +135,18 @@ hwaro serve
       <link>http://127.0.0.1:3000/posts/thoughts-on-lucky/</link>
       <guid>http://127.0.0.1:3000/posts/thoughts-on-lucky/</guid>
       <description>My thoughts on the Lucky web framework.</description>
-      <content:encoded><![CDATA[<p>My first developer gig was writing <a href="https://rubyonrails.org/">Rails</a> apps. At that job, I learned why Rails was so popular. Its CLI generators were a godsend. The simple, elegant syntax of <a href="https://ruby-lang.org/">Ruby</a>, combined with some clever macros, allowed me to focus on business logic rather than coding boilerplate and ceremony.</p>
-<p>After a few years of writing/maintaining Rails apps, I got burned out. Rails was great for getting quick prototypes up and running, and getting clients excited (and to pay!). Where Rails fell short was maintenance: preventing Nil-reference errors, improper variable naming. Rails' sluggish performance wasn't usually an issue for me, but when it was, it was a nightmare to deal with.</p>
-<p>Really, those issues weren't specific to Rails. Most of the issues I ran into can be attributed to the dynamically typed (read: duck) aspect of Ruby. After doing more work in other untyped languages like JavaScript and Python, I encountered similar issues. So really, it was a problem with dynamically typed languages.</p>
-<p>I eventually switched jobs, and started doing more frontend, React-specific sites. Most of it using TypeScript. TypeScript prevented lots of the silly foot-guns that JavaScript, another dynamically typed language, was prone to. If I had to make large changes to the codebase (such as a refactor, or resolve merge conflicts) I felt reasonably confident once the TS compiler was satisfied.</p>
-<p>But the TypeScript + React combo had its own downsides. I used React on its own, which is fine, but it's just a library, not a framework. So there were no scaffold generators, and if there were macros/preprocessors, they must've been minimal (ignoring the fact that TSX is kind of a macro system). That translated to much more boilerplate. If there were any coding conventions, we had to adhere to them manually. PR reviews felt like we were policing each other on silly code conventions, and less about the intent of the PR.</p>
-<p>This made me wonder: can we get the best of both worlds? Something with good, strong scaffold generation to enforce conventions, and something with static typing? Something with simple syntax, but strong-typing? That brings me to <a href="https://luckyframework.org/">Lucky</a>.</p>
+      <content:encoded><![CDATA[<p><a href="https://rubyonrails.org">Rails</a> got popular for a reason. It provided high-level productivity with just enough flexibility for a whole swath of web applications. Everyone from junior to senior-level devs could ramp up pretty fast. My first developer job was writing Rails applications, and I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.</p>
+<p>Lots of startups owe their initial success to Rails. You could argue they would have succeeded with any framework, but they chose that.</p>
+<p>That said, Rails' language, <a href="https://www.ruby-lang.org/">Ruby</a>, is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But in hiding all that, it made it all the more difficult to understand. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime.</p>
+<p>This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like <a href="http://127.0.0.1:3000/posts/thoughts-on-lucky/quarkus.io">Quarkus</a> to more bleeding edge ones like <a href="https://loco.rs">Loco</a>.</p>
+<p>Another one is <a href="https://luckyframework.org/">Lucky</a>.</p>
 <p>Lucky is written in a lesser-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegant. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style channels</a> for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>). It compiles its code into binaries using the same LLVM-backed system as Rust. So you get speedy programs, static analysis, all while retaining a simple syntax.</p>
 ]]></content:encoded>
       <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
       <category>crystal</category>
       <category>lucky</category>
+      <category>rails</category>
+      <category>web</category>
       <category>general</category>
     </item>
     <item>

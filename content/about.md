@@ -78,7 +78,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 
 ### Education
 ---
-#### Carleton University
+#### [Carleton University](https://carleton.ca)
 
 ###### Bachelor of Cognitive Science · 2010 – 2014
 
@@ -87,7 +87,7 @@ I'm a full-stack developer with 9 years of professional experience. I'm experien
 - Established a revision control system (git) for the AI model's codebase.
 - Documented various wiki articles regarding the AI model.
 
-#### Algonquin College of Applied Arts and Technology
+#### [Algonquin College of Applied Arts and Technology](https://algonquincollege.com)
 
 ###### Diploma, Animation, Interactive Technology, Video Graphics and Special Effects · 2004 – 2007
 

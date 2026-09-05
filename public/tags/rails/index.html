@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My thoughts on the Lucky web framework.">
-  <title>Thoughts on Lucky - Mike&#39;s Meanderings</title>
+  <meta name="description" content="Welcome to my personal blog powered by Hwaro.">
+  <title>Tags: rails - Mike&#39;s Meanderings</title>
   <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:3000/favicon.svg">
   <script>(function(){try{var t=localStorage.getItem("hwaro-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})()</script>
-  <meta property="og:title" content="Thoughts on Lucky">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="http://127.0.0.1:3000/posts/thoughts-on-lucky/">
-  <meta property="og:description" content="My thoughts on the Lucky web framework.">
+  <meta property="og:title" content="Tags: rails">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://127.0.0.1:3000/tags/rails/">
+  <meta property="og:description" content="Welcome to my personal blog powered by Hwaro.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Thoughts on Lucky">
-  <meta name="twitter:description" content="My thoughts on the Lucky web framework.">
-  <link rel="canonical" href="http://127.0.0.1:3000/posts/thoughts-on-lucky/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Thoughts on Lucky","url":"http://127.0.0.1:3000/posts/thoughts-on-lucky/","datePublished":"2026-08-18T00:00:00-04:00","description":"My thoughts on the Lucky web framework.","author":{"@type":"Person","name":"mike"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Mike's Meanderings","item":"http://127.0.0.1:3000/"},{"@type":"ListItem","position":2,"name":"Posts","item":"http://127.0.0.1:3000/posts/"},{"@type":"ListItem","position":3,"name":"Thoughts on Lucky"}]}</script>
+  <meta name="twitter:title" content="Tags: rails">
+  <meta name="twitter:description" content="Welcome to my personal blog powered by Hwaro.">
+  <link rel="canonical" href="http://127.0.0.1:3000/tags/rails/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Tags: rails","url":"http://127.0.0.1:3000/tags/rails/"}</script>
   
   
   
@@ -27,7 +26,7 @@
   
   
 </head>
-<body data-section="posts">
+<body data-section="tags">
 <header class="slim">
     <nav class="stack">
         <a href="http://127.0.0.1:3000/" class="logo">Mike&#39;s Meanderings</a>
@@ -62,56 +61,13 @@
     <div class="search-results" id="searchResults"></div>
   </div>
 </div>
-<div class="reading-progress" aria-hidden="true"></div>
   <main id="main">
-    <article class="post">
-      <header class="post-header">
-        <h1>Thoughts on Lucky</h1>
-        <div class="post-meta">
-          <time datetime="2026-08-18">2026-08-18</time>
-          <span class="post-meta-sep">·</span> <span class="post-reading-time">2 min read</span>
-        </div>
+    <h1>Tags: rails</h1>
+    <p class="taxonomy-desc">Posts tagged with this term:</p>
+    <ul class="taxonomy-pages">
+  <li><a href="http://127.0.0.1:3000/posts/thoughts-on-lucky/">Thoughts on Lucky</a></li>
+</ul>
 
-<div class="post-tags">
-  <a class="tag" href="http://127.0.0.1:3000/tags/crystal/">crystal</a><a class="tag" href="http://127.0.0.1:3000/tags/lucky/">lucky</a><a class="tag" href="http://127.0.0.1:3000/tags/rails/">rails</a><a class="tag" href="http://127.0.0.1:3000/tags/web/">web</a>
-</div>
-
-      </header>
-      <div class="post-content">
-        <p><a href="https://rubyonrails.org">Rails</a> got popular for a reason. It provided high-level productivity with just enough flexibility for a whole swath of web applications. Everyone from junior to senior-level devs could ramp up pretty fast. My first developer job was writing Rails applications, and I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.</p>
-<p>Lots of startups owe their initial success to Rails. You could argue they would have succeeded with any framework, but they chose that.</p>
-<p>That said, Rails' language, <a href="https://www.ruby-lang.org/">Ruby</a>, is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But in hiding all that, it made it all the more difficult to understand. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime.</p>
-<p>This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like <a href="quarkus.io">Quarkus</a> to more bleeding edge ones like <a href="https://loco.rs">Loco</a>.</p>
-<p>Another one is <a href="https://luckyframework.org/">Lucky</a>.</p>
-<p>Lucky is written in a lesser-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegant. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style channels</a> for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>). It compiles its code into binaries using the same LLVM-backed system as Rust. So you get speedy programs, static analysis, all while retaining a simple syntax.</p>
-
-      </div>
-
-      
-      
-      
-
-      
-      
-
-      
-      
-      <nav class="post-nav" aria-label="More posts">
-        
-        <a class="post-nav-link post-nav-prev" href="http://127.0.0.1:3000/posts/hello-world/" rel="prev">
-          <span class="post-nav-label">(Newer)</span>
-          <span class="post-nav-title">Hello World</span>
-        </a>
-        
-        
-        <a class="post-nav-link post-nav-next" href="http://127.0.0.1:3000/posts/crystal_oo_types/" rel="next">
-          <span class="post-nav-label">(Older)</span>
-          <span class="post-nav-title">Mixing instances of parent and child in Crystal</span>
-        </a>
-        
-      </nav>
-      
-    </article>
   </main>
     <footer class="blog-footer">
       <p>Mike&#39;s Meanderings · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>

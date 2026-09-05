@@ -1,22 +1,19 @@
 +++
 title = "Thoughts on Lucky"
 date = "2026-08-18"
-tags = ["crystal", "lucky"]
+tags = ["crystal", "lucky", "rails", "web"]
 categories = ["general"]
 authors = ["mike"]
 description = "My thoughts on the Lucky web framework."
 +++
+[Rails](https://rubyonrails.org) got popular for a reason. It provided high-level productivity with just enough flexibility for a whole swath of web applications. Everyone from junior to senior-level devs could ramp up pretty fast. My first developer job was writing Rails applications, and I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.
 
-My first developer gig was writing [Rails](https://rubyonrails.org/) apps. At that job, I learned why Rails was so popular. Its CLI generators were a godsend. The simple, elegant syntax of [Ruby](https://ruby-lang.org/), combined with some clever macros, allowed me to focus on business logic rather than coding boilerplate and ceremony.
+Lots of startups owe their initial success to Rails. You could argue they would have succeeded with any framework, but they chose that.
 
-After a few years of writing/maintaining Rails apps, I got burned out. Rails was great for getting quick prototypes up and running, and getting clients excited (and to pay!). Where Rails fell short was maintenance: preventing Nil-reference errors, improper variable naming. Rails' sluggish performance wasn't usually an issue for me, but when it was, it was a nightmare to deal with.
+That said, Rails' language, [Ruby](https://www.ruby-lang.org/), is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But in hiding all that, it made it all the more difficult to understand. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime. 
 
-Really, those issues weren't specific to Rails. Most of the issues I ran into can be attributed to the dynamically typed (read: duck) aspect of Ruby. After doing more work in other untyped languages like JavaScript and Python, I encountered similar issues. So really, it was a problem with dynamically typed languages.
+This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like [Quarkus](quarkus.io) to more bleeding edge ones like [Loco](https://loco.rs).
 
-I eventually switched jobs, and started doing more frontend, React-specific sites. Most of it using TypeScript. TypeScript prevented lots of the silly foot-guns that JavaScript, another dynamically typed language, was prone to. If I had to make large changes to the codebase (such as a refactor, or resolve merge conflicts) I felt reasonably confident once the TS compiler was satisfied.
-
-But the TypeScript + React combo had its own downsides. I used React on its own, which is fine, but it's just a library, not a framework. So there were no scaffold generators, and if there were macros/preprocessors, they must've been minimal (ignoring the fact that TSX is kind of a macro system). That translated to much more boilerplate. If there were any coding conventions, we had to adhere to them manually. PR reviews felt like we were policing each other on silly code conventions, and less about the intent of the PR.
-
-This made me wonder: can we get the best of both worlds? Something with good, strong scaffold generation to enforce conventions, and something with static typing? Something with simple syntax, but strong-typing? That brings me to [Lucky](https://luckyframework.org/).
+Another one is [Lucky](https://luckyframework.org/).
 
 Lucky is written in a lesser-known language called [Crystal](https://crystal-lang.org/). Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegant. Under the hood, it differs a lot. It's statically-typed, and uses [CSP-style channels](https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels) for concurrency (similar to [Go's](https://gobyexample.com/channels)). It compiles its code into binaries using the same LLVM-backed system as Rust. So you get speedy programs, static analysis, all while retaining a simple syntax.
