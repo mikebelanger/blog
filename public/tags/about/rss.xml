@@ -15,7 +15,8 @@
 <section id=about_me_bio>
 
     <p><img src="http://127.0.0.1:3000/img/md_mikeb.jpg" alt="" />
-I'm a full-stack developer with 9 years of professional experience. I'm experienced in building frontends with <a href="https://react.dev">React</a> and &quot;vanilla&quot; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>. I'm also experienced building and maintaining backends with <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://nodejs.org">Node.js</a> (<a href="https://expressjs.com">Express</a>), and <a href="https://python.org">Python</a> (<a href="https://flask.palletsprojects.com">Flask</a>). I've obtained Canadian security clearances (NATO, &quot;secret&quot;).</p>
+I'm a developer with 9 years of experience. Most of it in web development, using <a href="https://reactjs.org">React</a> on the frontend, and <a href="https://rubyonrails.org/">Ruby on Rails</a> on the backend. I've have Canadian security clearances (NATO, &quot;secret&quot;).
+My personal tech interests include <a href="https://rust-lang.org">Rust</a>, <a href="https://crystal-lang.org">Crystal</a>, and seeing what is possible with <a href="https://plainvanillaweb.com/">vanilla javascript</a>.</p>
 <p><a href="mailto:mikebelanger@fastmail.com">Email</a> · <a href="https://www.linkedin.com/in/mike-belanger-84035651/">LinkedIn</a> · <a href="https://github.com/mikebelanger">GitHub</a> · <a href="http://127.0.0.1:3000/files/MikeBelanger_Resume.pdf">Resume (PDF)</a></p>
 
 </section>
