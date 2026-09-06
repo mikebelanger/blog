@@ -1,0 +1,9 @@
+{% if strong and src and alt %}
+<section>
+    <img id="mike" src="{{ src }}" alt="{{ alt }}"></img>
+<section>
+    <h2>{{ strong }}</h2>
+    {{ body | markdownify }}
+</section>
+</section>
+{% endif %}

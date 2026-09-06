@@ -43,6 +43,7 @@ exclude = ["/private", "/drafts"]
 name = "Blog"
 url = "/blog/"
 weight = 1
+
 # =============================================================================
 # OpenGraph & Twitter Cards (recommended for social sharing)
 # =============================================================================

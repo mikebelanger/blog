@@ -5,16 +5,11 @@ categories = ["pages"]
 description = "Mike Belanger — Full-stack developer based in Ottawa, Canada."
 +++
 
-{% two_column() %}
-
-{% column(id="about_me_bio") %}
-![](/img/md_mikeb.jpg)
-I'm a developer with 9 years of experience. Most of it in web development, using [React](https://reactjs.org) on the frontend, and [Ruby on Rails](https://rubyonrails.org/) on the backend. I've have Canadian security clearances (NATO, "secret").
-My personal tech interests include [Rust](https://rust-lang.org), [Crystal](https://crystal-lang.org), and seeing what is possible with [vanilla javascript](https://plainvanillaweb.com/).
-
-[Email](mailto:mikebelanger@fastmail.com) · [LinkedIn](https://www.linkedin.com/in/mike-belanger-84035651/) · [GitHub](https://github.com/mikebelanger) · [Resume (PDF)](/files/MikeBelanger_Resume.pdf)
-{% end %}
-
+{% welcome(strong="Hi, I'm Mike", src="/img/md_mikeb.jpg", alt="me") %}
+I'm a web developer. I'm mostly experienced with [React](https://reactjs.org/) on the frontend, and [Ruby on Rails](https://rubyonrails.org/) in the backend.
+I'm a web developer. I'm mostly experienced with [React](https://reactjs.org/) on the frontend, and [Ruby on Rails](https://rubyonrails.org/) in the backend.
+I'm a web developer. I'm mostly experienced with [React](https://reactjs.org/) on the frontend, and [Ruby on Rails](https://rubyonrails.org/) in the backend.
+I'm a web developer. I'm mostly experienced with [React](https://reactjs.org/) on the frontend, and [Ruby on Rails](https://rubyonrails.org/) in the backend.
 {% end %}
 
 ### Skills

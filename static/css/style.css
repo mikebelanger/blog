@@ -502,10 +502,64 @@ footer {
 	border-color: var(--pico-primary);
 	border-width: var(--pico-border-width);
 	padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal) !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--pico-block-spacing-vertical);
 }
 
 footer > p {
     margin: unset;
+}
+
+/* Contact icon buttons — match the nav's theme-toggle size/style.
+   Positioned lower-right; the footer is flex column, so margin-left:auto
+   pushes this block to the end (right edge). */
+footer .contact-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    padding: unset;
+    border: 1px solid var(--pico-muted-border-color);
+    border-radius: var(--pico-border-radius);
+    color: var(--pico-muted-color);
+    background: transparent;
+    text-decoration: none;
+    transition:
+        color var(--pico-transition),
+        border-color var(--pico-transition),
+        background var(--pico-transition),
+        transform 0.1s var(--ease-out);
+}
+
+.contact-btn svg {
+    width: 1rem;
+    height: 1rem;
+}
+
+.contact-btn:hover {
+    color: var(--pico-primary);
+    border-color: var(--pico-primary);
+    background: var(--pico-primary-focus);
+}
+
+.contact-btn:active {
+    transform: scale(0.94);
+}
+
+.contact-resume {
+    margin: unset;
+    margin-left: auto;
+    font-size: 0.75rem;
 }
 
 /* Tags — quiet outline pills that take the ember tint on hover
@@ -563,34 +617,43 @@ ul.section-list {
     margin-bottom: unset;
 }
 
-div.two_column {
-    display: flex;
-    flex-direction: row;
-    gap: calc(0.5 * var(--pico-block-spacing-horizontal));
-}
-
-div.two_column  > *{
-    display: flex;
-    flex-direction: column;
-}
-
-section#about_me_bio {
-    flex: 1.2;
-}
-
-section#about_me_skills {
-    flex: 1;
-}
-
-section#about_me_bio > p > img {
+#mike {
 	float: left;
 	margin-right: var(--pico-block-spacing-horizontal);
-	margin-bottom: var(--pico-block-spacing-horizontal);
 	border-radius: 1em;
+	width: 200px;
+	height: auto;
+}
+
+footer.blog-footer {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    align-items: center;
+    padding: unset;
+    margin: unset;
+    justify-content: space-between;
+}
+
+section#contact {
+    display: flex;
+    align-items: center;
+    margin: unset;
+}
+
+@media screen and (width >= 500px) {
+    main#main {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
 }
 
 @media screen and (width <= 500px) {
-    section#about_me_bio > p > img {
+    main#main {
+        padding-left: var(--pico-block-spacing-horizontal) !important;
+        padding-right: var(--pico-block-spacing-horizontal) !important;
+    }
+    section#intro > img {
         width: 200px;
         height: auto;
     }
