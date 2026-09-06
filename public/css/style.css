@@ -117,7 +117,7 @@ pre code .ln { user-select: none; -webkit-user-select: none; opacity: .45; }
    CSS into a template, so a literal expression here would be rendered
    — and the expanded tag's own closing style tag would cut this
    stylesheet short, spilling the rest as page text.) */
-.code-wrapper {
+.code-wrapper, blockquote {
     position: relative;
 	width: fit-content;
 	box-shadow: var(--pico-primary-hover-border) 2px 2px 5px;
