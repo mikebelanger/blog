@@ -625,6 +625,12 @@ ul.section-list {
 	height: auto;
 }
 
+/* Keep the skills table out of the floated image's wrap — establish a fresh
+   formatting context so nothing beside #mike bleeds into it. */
+section#about_me_skills {
+    display: flow-root;
+}
+
 footer.blog-footer {
     display: flex;
     flex-direction: row;

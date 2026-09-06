@@ -11,15 +11,36 @@ I'm a web developer. I'm mostly experienced with [React](https://reactjs.org/) o
 I'm a web developer. I'm mostly experienced with [React](https://reactjs.org/) on the frontend, and [Ruby on Rails](https://rubyonrails.org/) in the backend.
 I'm a web developer. I'm mostly experienced with [React](https://reactjs.org/) on the frontend, and [Ruby on Rails](https://rubyonrails.org/) in the backend.
 {% end %}
-
-### Skills
 ---
-| Category | Skills |
-|----------|--------|
-| Frontend | [React](https://react.dev) & [React Native](https://reactnative.dev), [TypeScript](https://typescriptlang.org), [Angular](https://angular.dev), [Redux](https://redux.js.org) |
-| Backend | [Node.js](https://nodejs.org), [Python](https://python.org), [Ruby on Rails](https://rubyonrails.org), [REST APIs](https://restfulapi.net) |
-| Testing & Tools | [Cypress](https://cypress.io), [Puppeteer](https://pptr.dev), [Vitest](https://vitest.dev) |
-| Geospatial | [OpenLayers](https://openlayers.org), [Leaflet](https://leafletjs.com), [QGIS](https://qgis.org) |
+<section id="about_me_skills">
+    <h3>Skills</h3>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontend</td>
+<td><a href="https://react.dev">React</a> &amp; <a href="https://reactnative.dev">React Native</a>, <a href="https://typescriptlang.org">TypeScript</a>, <a href="https://angular.dev">Angular</a>, <a href="https://redux.js.org">Redux</a></td>
+</tr>
+<tr>
+<td>Backend</td>
+<td><a href="https://nodejs.org">Node.js</a>, <a href="https://python.org">Python</a>, <a href="https://rubyonrails.org">Ruby on Rails</a>, <a href="https://restfulapi.net">REST APIs</a></td>
+</tr>
+<tr>
+<td>Testing &amp; Tools</td>
+<td><a href="https://cypress.io">Cypress</a>, <a href="https://pptr.dev">Puppeteer</a>, <a href="https://vitest.dev">Vitest</a></td>
+</tr>
+<tr>
+<td>Geospatial</td>
+<td><a href="https://openlayers.org">OpenLayers</a>, <a href="https://leafletjs.com">Leaflet</a>, <a href="https://qgis.org">QGIS</a></td>
+</tr>
+</tbody>
+</table>
+</section>
 
 ### Experience
 ---
