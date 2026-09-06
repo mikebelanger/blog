@@ -56,6 +56,10 @@
     h6 {
         font-style: italic;
     }
+
+    section#greeting {
+        display: flow-root;
+    }
 }
 
 /* Code */
@@ -556,12 +560,6 @@ footer .contact-buttons {
     transform: scale(0.94);
 }
 
-.contact-resume {
-    margin: unset;
-    margin-left: auto;
-    font-size: 0.75rem;
-}
-
 /* Tags — quiet outline pills that take the ember tint on hover
    instead of flipping to a solid fill. */
 .tag {
@@ -625,10 +623,10 @@ ul.section-list {
 	height: auto;
 }
 
-/* Keep the skills table out of the floated image's wrap — establish a fresh
-   formatting context so nothing beside #mike bleeds into it. */
-section#about_me_skills {
-    display: flow-root;
+/* Clear the floated #mike image on the Skills heading so the skills table
+   (markdown) below never wraps up beside the image. */
+h3#skills {
+    clear: both;
 }
 
 footer.blog-footer {
@@ -651,6 +649,9 @@ section#contact {
     main#main {
         padding-left: 10% !important;
         padding-right: 10% !important;
+    }
+    section#greeting {
+        margin-bottom: unset !important;
     }
 }
 
