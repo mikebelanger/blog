@@ -36,6 +36,9 @@ sections = ["posts"]
 [search]
 enabled = true
 format = "fuse_json"
+fields = ["title", "content", "description", "tags", "url", "section"]
+filename = "search.json"
+exclude = ["/private", "/drafts"]
 
 [[menus.main]]
 name = "Posts"

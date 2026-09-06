@@ -17,6 +17,86 @@
     --code-attr:     light-dark(#45617a, #93b5c8);
     --code-symbol:   light-dark(#8a4368, #d79bb8);
 
+    /* Accent — the single ember. */
+    --primary: light-dark(#b35454, #ec7a66);
+    --primary-strong: light-dark(#8f4040, #f39683);
+    --primary-tint: color-mix(in srgb, var(--primary) 8%, transparent);
+    --selection: color-mix(in srgb, var(--primary) 22%, transparent);
+
+    /* Ember rule — the one mark every scaffold shares. */
+    --rule-from: light-dark(#c46262, #f39683);
+    --rule-to: light-dark(#8f4040, #cc5d4b);
+    /* The spark: the same ember as a 135° fill, used by the
+     diamond marks (logo, dividers, footer colophon). Resolves
+     through --rule-from/--rule-to, so the pre-light-dark()
+     fallback below needs no gradient copy. */
+    --spark: linear-gradient(135deg, var(--rule-from), var(--rule-to));
+
+    /* Ink — a three-step ramp. */
+    --heading: light-dark(#241f1a, #f7f2ea);
+    --text: light-dark(#2a241f, #e3ddd4);
+    --text-secondary: light-dark(#5b544a, #aca396);
+    --text-muted: light-dark(#6e675c, #857c72);
+
+    /* Surfaces & edges. */
+    --bg: light-dark(#faf8f4, #141110);
+    --bg-subtle: light-dark(#f2ede4, #1d1917);
+    --bg-raised: light-dark(#fffefb, #211c19);
+    --bg-code: light-dark(#efe9df, #241e1a);
+    --border: light-dark(#e3dbcf, #362e29);
+    --border-subtle: light-dark(#ece6dc, #292320);
+    --edge: color-mix(in srgb, var(--text) 8%, transparent);
+    --glass: color-mix(in srgb, var(--bg) 85%, transparent);
+    --scrim: light-dark(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+
+    /* Support hues (info boxes only — the accent stays singular). */
+    --warn: light-dark(#b07d2e, #d9a45a);
+    --ok: light-dark(#5e8c61, #8fb491);
+
+    /* Syntax (hljs classes; client and server highlighting). */
+    --code-comment: light-dark(#a1907c, #8a8073);
+    --code-keyword: light-dark(#b03a2e, #f0846f);
+    --code-string: light-dark(#5f7032, #b7c06a);
+    --code-number: light-dark(#9a6a14, #e8a83f);
+    --code-func: light-dark(#2f6a5a, #8ec5a3);
+    --code-type: light-dark(#b0641c, #e6914f);
+    --code-variable: light-dark(#8a4a3a, #e8b0a0);
+    --code-attr: light-dark(#45617a, #93b5c8);
+    --code-symbol: light-dark(#8a4368, #d79bb8);
+
+    /* Type scale — minor third (1.2), fluid. */
+    --step--1: clamp(0.83rem, 0.81rem + 0.11vw, 0.89rem);
+    --step-0: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
+    --step-1: clamp(1.2rem, 1.13rem + 0.35vw, 1.4rem);
+    --step-2: clamp(1.44rem, 1.32rem + 0.61vw, 1.78rem);
+    --step-3: clamp(1.73rem, 1.53rem + 0.98vw, 2.28rem);
+    --step-4: clamp(2.07rem, 1.77rem + 1.52vw, 2.92rem);
+    --step-5: clamp(2.49rem, 2.12rem + 1.84vw, 3.5rem);
+
+    /* Space — 8px rhythm. */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2.5rem;
+    --space-7: 4rem;
+    --space-8: 6rem;
+
+    /* Shape, depth, motion, measure. */
+    --measure: 68ch;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow-sm: 0 1px 2px
+        light-dark(rgba(42, 36, 31, 0.05), rgba(0, 0, 0, 0.3));
+    --shadow: 0 2px 8px light-dark(rgba(42, 36, 31, 0.08), rgba(0, 0, 0, 0.4));
+    --shadow-lg: 0 16px 70px
+        light-dark(rgba(42, 36, 31, 0.18), rgba(0, 0, 0, 0.5));
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition: 0.15s var(--ease-out);
+    --transition-slow: 0.45s var(--ease-out);
+    --glass-filter: saturate(150%) blur(16px);
+
     height: 100%;
 
     h3 {
@@ -203,7 +283,7 @@ nav.stack {
 header.slim {
     display: flex;
     justify-content: space-between;
-    border-bottom-color: var(--primary);
+    border-bottom-color: var(--pico-primary);
 	border-bottom-style: solid;
 	border-bottom-width: var(--border-width);
 }
@@ -285,8 +365,6 @@ li.post-item, ul.section-list > li {
     margin-bottom: unset;ccccccccccc
 }
 
-.search-overlay.active { display: flex; }
-
 /* Search overlay */
 .search-overlay {
   display: none;
@@ -299,6 +377,8 @@ li.post-item, ul.section-list > li {
   justify-content: center;
   padding-top: 12vh;
 }
+
+.search-overlay.active { display: flex; }
 
 .search-modal {
   width: 560px;
@@ -314,6 +394,166 @@ li.post-item, ul.section-list > li {
   flex-direction: column;
   overflow: hidden;
   align-self: flex-start;
+}
+
+/* The palette settles into place when it opens. */
+@media (prefers-reduced-motion: no-preference) {
+    .search-overlay.active {
+        transition: opacity 0.15s var(--ease-out);
+    }
+    .search-overlay.active .search-modal {
+        transition:
+            opacity 0.18s var(--ease-out),
+            transform 0.18s var(--ease-out);
+    }
+    @starting-style {
+        .search-overlay.active {
+            opacity: 0;
+        }
+        .search-overlay.active .search-modal {
+            opacity: 0;
+            transform: translateY(-8px) scale(0.985);
+        }
+    }
+}
+
+.search-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.search-input-wrap svg {
+    flex-shrink: 0;
+    color: var(--text-muted);
+}
+
+:focus-visible {
+    outline: 2px solid var(--pico-primary);
+    outline-offset: 2px;
+}
+.search-input-wrap:focus-within {
+    outline: 2px solid var(--pico-primary);
+    outline-offset: 2px;
+}
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--pico-primary);
+    color: var(--bg);
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+}
+.skip-link:focus {
+    top: 0;
+}
+.search-input-wrap input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--text);
+    background: transparent;
+}
+
+.search-input-wrap input::placeholder {
+    color: var(--text-muted);
+}
+
+.search-input-wrap kbd {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--bg-raised);
+    box-shadow: 0 1px 0 var(--border);
+    color: var(--text-muted);
+    font-family: inherit;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+.search-results {
+    overflow-y: auto;
+    padding: 0.5rem;
+}
+
+.search-result-item {
+    display: block;
+    padding: 0.6rem 0.75rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.search-result-item:hover,
+.search-result-item.active {
+    background: var(--pico-primary);
+    text-decoration: none;
+}
+.search-result-item .search-result-title {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 0.15rem;
+}
+.search-result-item .search-result-snippet {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.search-result-item .search-result-snippet mark {
+    background: color-mix(in srgb, var(--pico-primary) 15%, transparent);
+    color: var(--primary-strong);
+    border-radius: 2px;
+    padding: 0 1px;
+}
+.search-no-results {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.search-hint {
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    border-top: 1px solid var(--border-subtle);
+    color: var(--text-muted);
+    font-size: 0.7rem;
+}
+
+.search-hint kbd {
+    font-size: 0.65rem;
+    padding: 0 0.3rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--bg-raised);
+    box-shadow: 0 1px 0 var(--border);
+    font-family: inherit;
+    line-height: 1.4;
+}
+
+/* Search trigger press feedback */
+.search-trigger {
+    transition:
+        border-color var(--transition),
+        color var(--transition),
+        transform 0.1s var(--ease-out);
+}
+.search-trigger:active {
+    transform: scale(0.96);
 }
 
 footer {
@@ -347,9 +587,9 @@ footer > p {
 }
 
 .tag:hover {
-    background: var(--primary-tint);
-    color: var(--primary-strong);
-    border-color: color-mix(in srgb, var(--primary) 45%, transparent);
+    background: var(--pico-primary-tint);
+    color: var(--pico-primary-strong);
+    border-color: color-mix(in srgb, var(--pico-primary) 45%, transparent);
     text-decoration: none;
 }
 
