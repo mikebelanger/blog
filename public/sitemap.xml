@@ -18,6 +18,11 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://127.0.0.1:3000/posts/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://127.0.0.1:3000/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -141,5 +141,13 @@ My personal tech interests include <a href="https://rust-lang.org">Rust</a>, <a 
       <category>home</category>
       <category>pages</category>
     </item>
+    <item>
+      <title>Blog posts</title>
+      <link>http://127.0.0.1:3000/posts/</link>
+      <guid>http://127.0.0.1:3000/posts/</guid>
+      <description>Mike Belanger — Full-stack developer based in Ottawa, Canada.</description>
+      <category>home</category>
+      <category>pages</category>
+    </item>
   </channel>
 </rss>
