@@ -1,12 +1,6 @@
 :root {
-    color-scheme: light dark;
-    --page-spread: 2rem;
-    --border: light-dark(#e3dbcf, #362e29);
-    --border-width: 1px;
-    --scrim: light-dark(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-    --pico-typography-spacing-vertical: var(--page-spread);
-
-    /* Syntax (hljs classes; client and server highlighting). */
+    /* Syntax (hljs classes; client and server highlighting). Pico has no
+       per-token syntax colors — only code color tokens — so these stay. */
     --code-comment:  light-dark(#a1907c, #8a8073);
     --code-keyword:  light-dark(#b03a2e, #f0846f);
     --code-string:   light-dark(#5f7032, #b7c06a);
@@ -17,85 +11,7 @@
     --code-attr:     light-dark(#45617a, #93b5c8);
     --code-symbol:   light-dark(#8a4368, #d79bb8);
 
-    /* Accent — the single ember. */
-    --primary: light-dark(#b35454, #ec7a66);
-    --primary-strong: light-dark(#8f4040, #f39683);
-    --primary-tint: color-mix(in srgb, var(--primary) 8%, transparent);
-    --selection: color-mix(in srgb, var(--primary) 22%, transparent);
-
-    /* Ember rule — the one mark every scaffold shares. */
-    --rule-from: light-dark(#c46262, #f39683);
-    --rule-to: light-dark(#8f4040, #cc5d4b);
-    /* The spark: the same ember as a 135° fill, used by the
-     diamond marks (logo, dividers, footer colophon). Resolves
-     through --rule-from/--rule-to, so the pre-light-dark()
-     fallback below needs no gradient copy. */
-    --spark: linear-gradient(135deg, var(--rule-from), var(--rule-to));
-
-    /* Ink — a three-step ramp. */
-    --heading: light-dark(#241f1a, #f7f2ea);
-    --text: light-dark(#2a241f, #e3ddd4);
-    --text-secondary: light-dark(#5b544a, #aca396);
-    --text-muted: light-dark(#6e675c, #857c72);
-
-    /* Surfaces & edges. */
-    --bg: light-dark(#faf8f4, #141110);
-    --bg-subtle: light-dark(#f2ede4, #1d1917);
-    --bg-raised: light-dark(#fffefb, #211c19);
-    --bg-code: light-dark(#efe9df, #241e1a);
-    --border: light-dark(#e3dbcf, #362e29);
-    --border-subtle: light-dark(#ece6dc, #292320);
-    --edge: color-mix(in srgb, var(--text) 8%, transparent);
-    --glass: color-mix(in srgb, var(--bg) 85%, transparent);
-    --scrim: light-dark(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
-
-    /* Support hues (info boxes only — the accent stays singular). */
-    --warn: light-dark(#b07d2e, #d9a45a);
-    --ok: light-dark(#5e8c61, #8fb491);
-
-    /* Syntax (hljs classes; client and server highlighting). */
-    --code-comment: light-dark(#a1907c, #8a8073);
-    --code-keyword: light-dark(#b03a2e, #f0846f);
-    --code-string: light-dark(#5f7032, #b7c06a);
-    --code-number: light-dark(#9a6a14, #e8a83f);
-    --code-func: light-dark(#2f6a5a, #8ec5a3);
-    --code-type: light-dark(#b0641c, #e6914f);
-    --code-variable: light-dark(#8a4a3a, #e8b0a0);
-    --code-attr: light-dark(#45617a, #93b5c8);
-    --code-symbol: light-dark(#8a4368, #d79bb8);
-
-    /* Type scale — minor third (1.2), fluid. */
-    --step--1: clamp(0.83rem, 0.81rem + 0.11vw, 0.89rem);
-    --step-0: clamp(1rem, 0.96rem + 0.22vw, 1.125rem);
-    --step-1: clamp(1.2rem, 1.13rem + 0.35vw, 1.4rem);
-    --step-2: clamp(1.44rem, 1.32rem + 0.61vw, 1.78rem);
-    --step-3: clamp(1.73rem, 1.53rem + 0.98vw, 2.28rem);
-    --step-4: clamp(2.07rem, 1.77rem + 1.52vw, 2.92rem);
-    --step-5: clamp(2.49rem, 2.12rem + 1.84vw, 3.5rem);
-
-    /* Space — 8px rhythm. */
-    --space-1: 0.25rem;
-    --space-2: 0.5rem;
-    --space-3: 0.75rem;
-    --space-4: 1rem;
-    --space-5: 1.5rem;
-    --space-6: 2.5rem;
-    --space-7: 4rem;
-    --space-8: 6rem;
-
-    /* Shape, depth, motion, measure. */
-    --measure: 68ch;
-    --radius: 12px;
-    --radius-sm: 8px;
-    --shadow-sm: 0 1px 2px
-        light-dark(rgba(42, 36, 31, 0.05), rgba(0, 0, 0, 0.3));
-    --shadow: 0 2px 8px light-dark(rgba(42, 36, 31, 0.08), rgba(0, 0, 0, 0.4));
-    --shadow-lg: 0 16px 70px
-        light-dark(rgba(42, 36, 31, 0.18), rgba(0, 0, 0, 0.5));
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-    --transition: 0.15s var(--ease-out);
-    --transition-slow: 0.45s var(--ease-out);
-    --glass-filter: saturate(150%) blur(16px);
 
     height: 100%;
 
@@ -126,25 +42,25 @@
 
 /* Code */
 code {
-  background: var(--bg-code);
+  background: var(--pico-code-background-color);
   padding: 0.15rem 0.4rem;
   border-radius: 4px;
   font-size: 0.85em;
   font-family: monospace;
-  color: var(--text);
+  color: var(--pico-color);
   overflow-wrap: break-word;
 }
 
 pre {
   padding: 1rem 1.25rem;
-  border-radius: var(--radius);
+  border-radius: var(--pico-border-radius);
   overflow-x: auto;
-  border: 1px solid var(--border);
+  border: 1px solid var(--pico-muted-border-color);
   margin: 1rem 0 1.5rem 0;
   line-height: 1.5;
-  background: var(--bg-code);
+  background: var(--pico-code-background-color);
   scrollbar-width: thin;
-  scrollbar-color: var(--border) transparent;
+  scrollbar-color: var(--pico-muted-border-color) transparent;
 }
 
 /* Drop the highlight theme's own white background so syntax tokens
@@ -170,9 +86,9 @@ pre code .line.hl { display: inline-block; width: 100%; background: color-mix(in
 pre code .ln { user-select: none; -webkit-user-select: none; opacity: .45; }
 
 /* Fence filename label: {name="main.cr"} / {title="..."} */
-.code-block { position: relative; margin: var(--space-md, 1rem) 0; }
+.code-block { position: relative; margin: var(--pico-spacing) 0; }
 .code-block > pre { margin: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
-.code-filename { padding: 0.35rem 0.85rem; font-family: var(--font-mono, monospace); font-size: 0.78rem; color: var(--text-muted); background: color-mix(in srgb, var(--code-bg, var(--surface)) 88%, var(--text-muted)); border: 1px solid var(--border); border-bottom: 0; border-radius: var(--radius-sm) var(--radius-sm) 0 0; }
+.code-filename { padding: 0.35rem 0.85rem; font-family: var(--pico-font-family-monospace); font-size: 0.78rem; color: var(--pico-muted-color); background: color-mix(in srgb, var(--pico-code-background-color) 88%, var(--pico-muted-color)); border: 1px solid var(--pico-muted-border-color); border-bottom: 0; border-radius: var(--pico-border-radius) var(--pico-border-radius) 0 0; }
 
 /* Copy button: [highlight] copy / {copy=true}. The theme-neutral inline
    styles from the highlight_js tag ship in-body AFTER this stylesheet, so
@@ -184,7 +100,7 @@ pre code .ln { user-select: none; -webkit-user-select: none; opacity: .45; }
    — and the expanded tag's own closing style tag would cut this
    stylesheet short, spilling the rest as page text.) */
 .code-wrapper { position: relative; }
-.code-copy-btn.code-copy-btn { position: absolute; top: 0.45rem; right: 0.45rem; padding: 0.25rem 0.6rem; font-family: var(--font-mono, monospace); font-size: 0.72rem; color: var(--text-muted); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); opacity: 0; cursor: pointer; transition: opacity 0.15s ease; }
+.code-copy-btn.code-copy-btn { position: absolute; top: 0.45rem; right: 0.45rem; padding: 0.25rem 0.6rem; font-family: var(--pico-font-family-monospace); font-size: 0.72rem; color: var(--pico-muted-color); background: var(--pico-card-background-color); border: 1px solid var(--pico-muted-border-color); border-radius: var(--pico-border-radius); opacity: 0; cursor: pointer; transition: opacity 0.15s ease; }
 .code-wrapper:hover .code-copy-btn.code-copy-btn, .code-block:hover .code-copy-btn.code-copy-btn, .code-copy-btn.code-copy-btn:focus-visible { opacity: 1; }
 .code-copy-btn.code-copy-btn.copied { opacity: 1; color: var(--code-string); border-color: var(--code-string); }
 
@@ -207,31 +123,31 @@ body {
 nav.stack {
     align-items: center;
     justify-content: space-between;
-    gap: var(--page-spread);
-    font-size: calc(var(--page-spread) * 0.5);
+    gap: var(--pico-block-spacing-horizontal);
+    font-size: var(--pico-font-size);
     width: auto;
-    gap: var(--page-spread);
 }
 
 .slim, footer.blog-footer {
-    padding-left: var(--page-spread);
-    padding-right: var(--page-spread);
+    padding-left: var(--pico-block-spacing-horizontal);
+    padding-right: var(--pico-block-spacing-horizontal);
 }
 
 .search-and-theme {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-items: flex-end;
-    height: var(--page-spread);
     gap: 0.5rem;
 }
 
 .search-and-theme > button {
     border-style: solid;
     border-radius: 10px;
-    border-color: var(--pico-color-slate-600) !important;
+    border-color: var(--pico-muted-border-color) !important;
     border-width: 2px;
     margin: unset;
+    height: 2rem;
 }
 
 /* Search trigger */
@@ -240,10 +156,10 @@ nav.stack {
     align-items: center;
     gap: 0.4rem;
     padding: 0.5rem 0.5rem;
-    background: var(--bg);
+    background: var(--pico-background-color);
     font-size: 0.8rem;
     cursor: pointer;
-    transition: all var(--transition);
+    transition: all var(--pico-transition);
     font-family: inherit;
 }
 
@@ -254,7 +170,7 @@ nav.stack {
     justify-content: center;
     background: transparent;
     cursor: pointer;
-    transition: color var(--transition),
+    transition: color var(--pico-transition),
     transform 0.1s var(--ease-out);
     height: 2rem;
     width: 2rem;
@@ -270,11 +186,11 @@ nav.stack {
 .search-trigger kbd {
     font-size: 0.65rem;
     padding: 0.1rem 0.35rem;
-    border: 1px solid var(--border);
+    border: 1px solid var(--pico-muted-border-color);
     border-radius: 3px;
-    background: var(--bg-raised);
-    box-shadow: 0 1px 0 var(--border);
-    color: var(--text-muted);
+    background: var(--pico-card-background-color);
+    box-shadow: 0 1px 0 var(--pico-muted-border-color);
+    color: var(--pico-muted-color);
     font-family: inherit;
     line-height: 1rem;
 }
@@ -285,7 +201,7 @@ header.slim {
     justify-content: space-between;
     border-bottom-color: var(--pico-primary);
 	border-bottom-style: solid;
-	border-bottom-width: var(--border-width);
+	border-bottom-width: var(--pico-border-width);
 }
 
 header.post-header, footer.blog-footer {
@@ -294,7 +210,7 @@ header.post-header, footer.blog-footer {
 }
 
 main {
-    padding: var(--page-spread) !important;
+    padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal) !important;
     overflow-y: auto;
     margin-bottom: auto;
 }
@@ -309,8 +225,8 @@ article.post {
 
 header.post-header {
     background-color: unset;
-    margin-bottom: calc(var(--page-spread) * 0.5);
-    padding-bottom: calc(var(--page-spread) * 0.5);
+    margin-bottom: calc(var(--pico-block-spacing-vertical) * 0.5);
+    padding-bottom: calc(var(--pico-block-spacing-vertical) * 0.5);
     border-bottom-width: 2px;
 }
 
@@ -326,8 +242,8 @@ h1, h2, h3, h4, h5, h6 {
 .post-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: calc(var(--page-spread) * 0.25);
-    margin-top: calc(var(--page-spread) * 0.25);
+    gap: calc(var(--pico-block-spacing-vertical) * 0.25);
+    margin-top: calc(var(--pico-block-spacing-vertical) * 0.25);
 }
 
 .post-meta > *,
@@ -337,19 +253,6 @@ main > p,
 {
     font-style: italic;
     font-size: 0.75rem !important;
-}
-
-/* Search overlay */
-.search-overlay {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: var(--scrim);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  z-index: 200;
-  justify-content: center;
-  padding-top: 12vh;
 }
 
 ul.post-list, ul.section-list {
@@ -362,7 +265,7 @@ li.post-item, ul.section-list > li {
 }
 
 .post-title {
-    margin-bottom: unset;ccccccccccc
+    margin-bottom: unset;
 }
 
 /* Search overlay */
@@ -370,7 +273,7 @@ li.post-item, ul.section-list > li {
   display: none;
   position: fixed;
   inset: 0;
-  background: var(--scrim);
+  background: var(--pico-modal-overlay-background-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   z-index: 200;
@@ -384,12 +287,12 @@ li.post-item, ul.section-list > li {
   width: 560px;
   max-width: 90vw;
   max-height: 70vh;
-  background: color-mix(in srgb, var(--bg-raised) 88%, transparent);
+  background: color-mix(in srgb, var(--pico-card-background-color) 88%, transparent);
   backdrop-filter: saturate(180%) blur(24px);
   -webkit-backdrop-filter: saturate(180%) blur(24px);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--pico-muted-border-color);
+  border-radius: var(--pico-border-radius);
+  box-shadow: var(--pico-box-shadow);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -422,12 +325,12 @@ li.post-item, ul.section-list > li {
     align-items: center;
     gap: 0.6rem;
     padding: 0.75rem 1rem;
-    border-bottom: 1px solid var(--border-subtle);
+    border-bottom: 1px solid var(--pico-muted-border-color);
 }
 
 .search-input-wrap svg {
     flex-shrink: 0;
-    color: var(--text-muted);
+    color: var(--pico-muted-color);
 }
 
 :focus-visible {
@@ -443,7 +346,7 @@ li.post-item, ul.section-list > li {
     top: -100px;
     left: 0;
     background: var(--pico-primary);
-    color: var(--bg);
+    color: var(--pico-primary-inverse);
     padding: 0.5rem 1rem;
     z-index: 1000;
 }
@@ -456,22 +359,22 @@ li.post-item, ul.section-list > li {
     outline: none;
     font-size: 1rem;
     font-family: inherit;
-    color: var(--text);
+    color: var(--pico-color);
     background: transparent;
 }
 
 .search-input-wrap input::placeholder {
-    color: var(--text-muted);
+    color: var(--pico-muted-color);
 }
 
 .search-input-wrap kbd {
     font-size: 0.65rem;
     padding: 0.15rem 0.4rem;
-    border: 1px solid var(--border);
+    border: 1px solid var(--pico-muted-border-color);
     border-radius: 3px;
-    background: var(--bg-raised);
-    box-shadow: 0 1px 0 var(--border);
-    color: var(--text-muted);
+    background: var(--pico-card-background-color);
+    box-shadow: 0 1px 0 var(--pico-muted-border-color);
+    color: var(--pico-muted-color);
     font-family: inherit;
     cursor: pointer;
     line-height: 1.4;
@@ -485,9 +388,9 @@ li.post-item, ul.section-list > li {
 .search-result-item {
     display: block;
     padding: 0.6rem 0.75rem;
-    border-radius: var(--radius-sm);
+    border-radius: var(--pico-border-radius);
     text-decoration: none;
-    color: var(--text);
+    color: var(--pico-color);
     cursor: pointer;
     transition: background 0.1s;
 }
@@ -495,6 +398,7 @@ li.post-item, ul.section-list > li {
 .search-result-item:hover,
 .search-result-item.active {
     background: var(--pico-primary);
+    color: var(--pico-primary-inverse);
     text-decoration: none;
 }
 .search-result-item .search-result-title {
@@ -504,7 +408,7 @@ li.post-item, ul.section-list > li {
 }
 .search-result-item .search-result-snippet {
     font-size: 0.8rem;
-    color: var(--text-secondary);
+    color: var(--pico-muted-color);
     line-height: 1.4;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -513,14 +417,14 @@ li.post-item, ul.section-list > li {
 }
 .search-result-item .search-result-snippet mark {
     background: color-mix(in srgb, var(--pico-primary) 15%, transparent);
-    color: var(--primary-strong);
+    color: var(--pico-primary);
     border-radius: 2px;
     padding: 0 1px;
 }
 .search-no-results {
     padding: 2rem 1rem;
     text-align: center;
-    color: var(--text-muted);
+    color: var(--pico-muted-color);
     font-size: 0.9rem;
 }
 
@@ -529,18 +433,18 @@ li.post-item, ul.section-list > li {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    border-top: 1px solid var(--border-subtle);
-    color: var(--text-muted);
+    border-top: 1px solid var(--pico-muted-border-color);
+    color: var(--pico-muted-color);
     font-size: 0.7rem;
 }
 
 .search-hint kbd {
     font-size: 0.65rem;
     padding: 0 0.3rem;
-    border: 1px solid var(--border);
+    border: 1px solid var(--pico-muted-border-color);
     border-radius: 3px;
-    background: var(--bg-raised);
-    box-shadow: 0 1px 0 var(--border);
+    background: var(--pico-card-background-color);
+    box-shadow: 0 1px 0 var(--pico-muted-border-color);
     font-family: inherit;
     line-height: 1.4;
 }
@@ -548,8 +452,8 @@ li.post-item, ul.section-list > li {
 /* Search trigger press feedback */
 .search-trigger {
     transition:
-        border-color var(--transition),
-        color var(--transition),
+        border-color var(--pico-transition),
+        color var(--pico-transition),
         transform 0.1s var(--ease-out);
 }
 .search-trigger:active {
@@ -559,8 +463,8 @@ li.post-item, ul.section-list > li {
 footer {
 	width: 100%;
 	border-top-style: solid;
-	border-width: var(--border-width);
-	padding: var(--page-spread) !important;
+	border-width: var(--pico-border-width);
+	padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal) !important;
 }
 
 footer > p {
@@ -576,19 +480,19 @@ footer > p {
     padding: 0.15rem 0.7rem;
     border-radius: 999px;
     font-size: 0.75rem;
-    color: var(--text-secondary);
+    color: var(--pico-muted-color);
     text-decoration: none;
-    border: 1px solid var(--border);
+    border: 1px solid var(--pico-muted-border-color);
     transition:
-        color var(--transition),
-        border-color var(--transition),
-        background var(--transition),
+        color var(--pico-transition),
+        border-color var(--pico-transition),
+        background var(--pico-transition),
         transform 0.1s var(--ease-out);
 }
 
 .tag:hover {
-    background: var(--pico-primary-tint);
-    color: var(--pico-primary-strong);
+    background: var(--pico-primary-focus);
+    color: var(--pico-primary);
     border-color: color-mix(in srgb, var(--pico-primary) 45%, transparent);
     text-decoration: none;
 }
@@ -603,7 +507,7 @@ ul.section-list {
     padding: 0;
 }
 
-@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--bg-raised); } }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { .search-modal { background: var(--pico-card-background-color); } }
 
 
 /* About section */
@@ -625,7 +529,7 @@ ul.section-list {
 div.two_column {
     display: flex;
     flex-direction: row;
-    gap: calc(0.5 * var(--page-spread));
+    gap: calc(0.5 * var(--pico-block-spacing-horizontal));
 }
 
 div.two_column  > *{
@@ -643,7 +547,7 @@ section#about_me_skills {
 
 section#about_me_bio > p > img {
 	float: left;
-	margin-right: calc(var(--page-spread) * 0.5);
+	margin-right: calc(0.5 * var(--pico-block-spacing-horizontal));
 	border-radius: 1em;
 }
 

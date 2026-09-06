@@ -4,14 +4,14 @@
 
 ## Pages
 
-- [Mike's Meanderings](http://127.0.0.1:3000/): A blog powered by Hwaro: posts, archives, and tags.
-- [Hi, I'm Mike](http://127.0.0.1:3000/about/): Mike Belanger — Full-stack developer based in Ottawa, Canada.
+- [Mike's Meanderings](http://localhost:3000/): A blog powered by Hwaro: posts, archives, and tags.
+- [Hi, I'm Mike](http://localhost:3000/about/): Mike Belanger — Full-stack developer based in Ottawa, Canada.
 
 ## Posts
 
-- [Mixing instances of parent and child in Crystal](http://127.0.0.1:3000/posts/crystal_oo_types/): My thoughts on the Lucky web framework.
-- [Getting Started with Hwaro](http://127.0.0.1:3000/posts/getting-started-with-hwaro/): A beginner's guide to building websites with Hwaro.
-- [Hello World](http://127.0.0.1:3000/posts/hello-world/): Where this blog starts, and how to make it yours.
-- [Markdown Tips and Tricks](http://127.0.0.1:3000/posts/markdown-tips/): Learn useful Markdown formatting techniques for your blog posts.
-- [Thoughts on Lucky](http://127.0.0.1:3000/posts/thoughts-on-lucky/): My thoughts on the Lucky web framework.
+- [Mixing instances of parent and child in Crystal](http://localhost:3000/posts/crystal_oo_types/): My thoughts on the Lucky web framework.
+- [Getting Started with Hwaro](http://localhost:3000/posts/getting-started-with-hwaro/): A beginner's guide to building websites with Hwaro.
+- [Hello World](http://localhost:3000/posts/hello-world/): Where this blog starts, and how to make it yours.
+- [Markdown Tips and Tricks](http://localhost:3000/posts/markdown-tips/): Learn useful Markdown formatting techniques for your blog posts.
+- [Thoughts on Lucky](http://localhost:3000/posts/thoughts-on-lucky/): My thoughts on the Lucky web framework.
 

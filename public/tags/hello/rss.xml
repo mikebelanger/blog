@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mike&apos;s Meanderings - Tags: hello</title>
-    <link>http://127.0.0.1:3000/tags/hello/</link>
+    <link>http://localhost:3000/tags/hello/</link>
     <description>Welcome to my personal blog powered by Hwaro.</description>
-    <atom:link href="http://127.0.0.1:3000/tags/hello/rss.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:3000/tags/hello/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
-      <link>http://127.0.0.1:3000/posts/hello-world/</link>
-      <guid>http://127.0.0.1:3000/posts/hello-world/</guid>
+      <link>http://localhost:3000/posts/hello-world/</link>
+      <guid>http://localhost:3000/posts/hello-world/</guid>
       <description>Where this blog starts, and how to make it yours.</description>
       <content:encoded><![CDATA[<p>Every blog starts somewhere, and this one starts here. The site around this post is powered by Hwaro, a fast static site generator written in Crystal.</p>
 <h2 id="what-the-samples-show">What the samples show</h2>
