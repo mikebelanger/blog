@@ -1,5 +1,4 @@
-title = "Mike's Meanderings"
-description = "Ramblings, reviews and rundowns."
+title = "Home"
 base_url = "http://localhost:3000"
 [plugins]
 processors = ["markdown"]
@@ -41,16 +40,9 @@ filename = "search.json"
 exclude = ["/private", "/drafts"]
 
 [[menus.main]]
-name = "Posts"
-url = "/posts/"
+name = "Blog"
+url = "/blog/"
 weight = 1
-
-
-[[menus.main]]
-name = "About"
-url = "/about/"
-weight = 3
-
 
 # =============================================================================
 # OpenGraph & Twitter Cards (recommended for social sharing)

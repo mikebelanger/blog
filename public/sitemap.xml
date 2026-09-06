@@ -6,24 +6,19 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/posts/thoughts-on-lucky/</loc>
+    <loc>http://127.0.0.1:3000/blog/thoughts-on-lucky/</loc>
     <lastmod>2026-08-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/posts/crystal_oo_types/</loc>
+    <loc>http://127.0.0.1:3000/blog/crystal_oo_types/</loc>
     <lastmod>2023-12-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/about/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://127.0.0.1:3000/posts/</loc>
+    <loc>http://127.0.0.1:3000/blog/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -58,22 +53,17 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/tags/about/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://127.0.0.1:3000/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/categories/general/</loc>
+    <loc>http://127.0.0.1:3000/categories/pages/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://127.0.0.1:3000/categories/pages/</loc>
+    <loc>http://127.0.0.1:3000/categories/general/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

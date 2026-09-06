@@ -4,29 +4,8 @@
   <main id="main">
     <header class="home-hero">
     <hgroup>
-      <h1 class="home-title">{{ site.title | e }}</h1>
-      {% if site.description %}<p class="home-tagline">{{ site.description | e }}</p>{% endif %}
       {% if content %}<div class="home-intro">{{ content }}</div>{% endif %}
     </hgroup>
     </header>
-    <section class="home-latest" aria-labelledby="home-latest-title">
-      <h2 id="home-latest-title" class="home-section-title">Latest posts</h2>
-      <ul class="post-list">
-        {% for p in site.pages | selectattr("date") | rejectattr("is_index") | rejectattr("draft") | selectattr("language", "equalto", page_language) | sort(attribute="date", reverse=true) %}
-        {% if loop.index <= 5 %}
-          <li class="post-item">
-            <hgroup class="post-item-body">
-              <h3 class="post-title">
-                  <a href="{{ base_url }}{{ p.url }}">{{ p.title | e }}</a>
-              </h3>
-              <time class="post-date" datetime="{{ p.date }}">{{ p.date }}</time>
-              {% if p.description %}<p class="post-excerpt">{{ p.description | e }}</p>{% endif %}
-            </>
-          </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-      <p class="home-more"><a href="{{ base_url }}{{ lang_prefix }}/posts/">View all posts</a></p>
-    </section>
   </main>
 {% include "footer.html" %}

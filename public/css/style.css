@@ -599,8 +599,8 @@ section#about_me_bio > p > img {
         font-size: 1rem !important;
     }
 
-    p, li {
-        font-size: 0.9rem !important;
+    p, li, code, span {
+        font-size: 0.7rem !important;
     }
 
     .stack {

@@ -4,18 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="An index of every published blog post.">
-  <title>Posts - Mike&#39;s Meanderings</title>
+  <title>Blog - Home</title>
   <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:3000/favicon.svg">
   <script>(function(){try{var t=localStorage.getItem("hwaro-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})()</script>
-  <meta property="og:title" content="Posts">
+  <meta property="og:title" content="Blog">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://127.0.0.1:3000/posts/">
+  <meta property="og:url" content="http://127.0.0.1:3000/blog/">
   <meta property="og:description" content="An index of every published blog post.">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Posts">
+  <meta name="twitter:title" content="Blog">
   <meta name="twitter:description" content="An index of every published blog post.">
-  <link rel="canonical" href="http://127.0.0.1:3000/posts/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Posts","url":"http://127.0.0.1:3000/posts/","description":"An index of every published blog post."}</script>
+  <link rel="canonical" href="http://127.0.0.1:3000/blog/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Blog","url":"http://127.0.0.1:3000/blog/","description":"An index of every published blog post."}</script>
   
   
   
@@ -26,16 +26,16 @@
   
   
 </head>
-<body data-section="posts">
+<body data-section="blog">
 <header class="slim">
     <nav class="stack">
-        <a href="http://127.0.0.1:3000/" class="logo">Mike&#39;s Meanderings</a>
+        <a href="http://127.0.0.1:3000/" class="logo">Home</a>
 
       <!-- Add/reorder links via [[menus.main]] in config.toml, or
            register a page/section into "main" from its own front
            matter with `menus = ["main"]` — no template edit
            required either way. -->
-      <a href="/posts/" aria-current="page">Posts</a><a href="/about/">About</a>
+      <a href="/blog/" aria-current="page">Blog</a>
     </nav>
     <div class="search-and-theme">
       <!---->
@@ -62,19 +62,45 @@
 </div>
   <main id="main">
       <hgroup>
-    <h1>Posts</h1>
+    <h1>Blog</h1>
     <p>Browse all blog posts below.</p>
 
       </hgroup>
-    <ul class="section-list">
-      <li><a href="http://127.0.0.1:3000/posts/thoughts-on-lucky/">Thoughts on Lucky</a></li>
-<li><a href="http://127.0.0.1:3000/posts/crystal_oo_types/">Mixing instances of parent and child in Crystal</a></li>
 
-    </ul>
-    
+    <section class="home-latest" aria-labelledby="home-latest-title">
+      <ul class="post-list">
+        
+        
+          <li class="post-item">
+            <hgroup class="post-item-body">
+              <h3 class="post-title">
+                  <a href="http://127.0.0.1:3000/blog/thoughts-on-lucky/">Thoughts on Lucky</a>
+              </h3>
+              <time class="post-date" datetime="2026-08-18">2026-08-18</time>
+              <p class="post-excerpt">My thoughts on the Lucky web framework.</p>
+            </>
+          </li>
+        
+        
+        
+          <li class="post-item">
+            <hgroup class="post-item-body">
+              <h3 class="post-title">
+                  <a href="http://127.0.0.1:3000/blog/crystal_oo_types/">Mixing instances of parent and child in Crystal</a>
+              </h3>
+              <time class="post-date" datetime="2023-12-14">2023-12-14</time>
+              <p class="post-excerpt">A strange error message from the Crystal compiler.</p>
+            </>
+          </li>
+        
+        
+      </ul>
+      <p class="home-more"><a href="http://127.0.0.1:3000/posts/">View all posts</a></p>
+    </section>
+
   </main>
     <footer class="blog-footer">
-      <p>Mike&#39;s Meanderings · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
+      <p>Home · Powered by <a href="https://github.com/hahwul/hwaro">Hwaro</a></p>
     </footer>
   </main>
 </div>
