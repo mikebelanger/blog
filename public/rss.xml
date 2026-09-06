@@ -2,138 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mike&apos;s Meanderings</title>
-    <link>http://localhost:3000/</link>
-    <description>Welcome to my personal blog powered by Hwaro.</description>
-    <atom:link href="http://localhost:3000/rss.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Markdown Tips and Tricks</title>
-      <link>http://localhost:3000/posts/markdown-tips/</link>
-      <guid>http://localhost:3000/posts/markdown-tips/</guid>
-      <description>Learn useful Markdown formatting techniques for your blog posts.</description>
-      <content:encoded><![CDATA[<p>Hwaro uses Markdown for content. Here are some useful formatting tips.</p>
-<h2 id="text-formatting">Text Formatting</h2>
-<ul>
-<li><strong>Bold text</strong> using <code>**bold**</code></li>
-<li><em>Italic text</em> using <code>*italic*</code></li>
-<li><code>Inline code</code> using backticks</li>
-</ul>
-<h2 id="code-blocks">Code Blocks</h2>
-<p>Use triple backticks for code blocks:</p>
-<pre data-copy="true"><code class="language-crystal hljs">puts <span class="hljs-string">&quot;</span><span class="hljs-string">Hello from Crystal!</span><span class="hljs-string">&quot;</span><span class="hljs-string"></span>
-
-<span class="hljs-keyword">class</span> <span class="hljs-variable constant_">SomeClass</span>
-  <span class="hljs-keyword">def</span> <span class="hljs-variable">initialize</span>
-  <span class="hljs-keyword">end</span>
-<span class="hljs-keyword">end</span>
-</code></pre>
-<h2 id="lists">Lists</h2>
-<p>Ordered lists:</p>
-<ol>
-<li>First item</li>
-<li>Second item</li>
-<li>Third item</li>
-</ol>
-<p>Unordered lists:</p>
-<ul>
-<li>Item one</li>
-<li>Item two</li>
-<li>Item three</li>
-</ul>
-<h2 id="links-and-images">Links and Images</h2>
-<p>Create a link with square brackets around the text and parentheses
-around the URL, for example <a href="https://github.com/hahwul/hwaro">Hwaro on GitHub</a>.
-Prefix the same form with <code>!</code> to embed an image instead.</p>
-<h2 id="tables">Tables</h2>
-<table>
-<thead>
-<tr>
-<th>Syntax</th>
-<th>Renders as</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>**bold**</code></td>
-<td><strong>bold</strong></td>
-</tr>
-<tr>
-<td><code>*italic*</code></td>
-<td><em>italic</em></td>
-</tr>
-<tr>
-<td>`<code> </code>code<code> </code>`</td>
-<td><code>code</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="blockquotes">Blockquotes</h2>
-<blockquote>
-<p>This is a blockquote.
-It can span multiple lines.</p>
-</blockquote>
-<p>Happy writing!</p>
-]]></content:encoded>
-      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
-      <category>markdown</category>
-      <category>writing</category>
-      <category>tips</category>
-      <category>tutorials</category>
-    </item>
-    <item>
-      <title>Getting Started with Hwaro</title>
-      <link>http://localhost:3000/posts/getting-started-with-hwaro/</link>
-      <guid>http://localhost:3000/posts/getting-started-with-hwaro/</guid>
-      <description>A beginner&apos;s guide to building websites with Hwaro.</description>
-      <content:encoded><![CDATA[<p>In this post, I'll walk you through the basics of setting up and using Hwaro.</p>
-<h2 id="installation">Installation</h2>
-<p>First, make sure you have Crystal installed. Then:</p>
-<pre data-copy="true"><code class="language-bash hljs">git clone https://github.com/hahwul/hwaro
-<span class="hljs-built_in">cd</span> hwaro
-shards build
-</code></pre>
-<h2 id="creating-your-first-site">Creating Your First Site</h2>
-<pre data-copy="true"><code class="language-bash hljs">hwaro init my-blog --scaffold blog
-<span class="hljs-built_in">cd</span> my-blog
-hwaro serve
-</code></pre>
-<p>That's it! Your blog is now running at <code>http://localhost:3000</code>.</p>
-<h2 id="next-steps">Next Steps</h2>
-<ul>
-<li>Customize your templates in the <code>templates/</code> directory</li>
-<li>Add new posts in <code>content/posts/</code></li>
-<li>Configure your site in <code>config.toml</code></li>
-</ul>
-]]></content:encoded>
-      <pubDate>Sun, 23 Aug 2026 00:00:00 +0000</pubDate>
-      <category>tutorial</category>
-      <category>getting-started</category>
-      <category>hwaro</category>
-      <category>tutorials</category>
-    </item>
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:3000/posts/hello-world/</link>
-      <guid>http://localhost:3000/posts/hello-world/</guid>
-      <description>Where this blog starts, and how to make it yours.</description>
-      <content:encoded><![CDATA[<p>Every blog starts somewhere, and this one starts here. The site around this post is powered by Hwaro, a fast static site generator written in Crystal.</p>
-<h2 id="what-the-samples-show">What the samples show</h2>
-<p>Three sample posts (including this one) demonstrate how dates, tags, and categories flow through the homepage feed, the archives, and the taxonomy pages. When you're ready to write for real:</p>
-<ul>
-<li>Delete the samples under <code>content/posts/</code>.</li>
-<li>Run <code>hwaro new posts/my-first-post.md</code> to start a post; the archetype fills in the front matter.</li>
-<li>Publish with <code>hwaro build</code>.</li>
-</ul>
-<p>The feed and archives pick up new posts automatically. Nothing else to wire up.</p>
-]]></content:encoded>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 +0000</pubDate>
-      <category>introduction</category>
-      <category>hello</category>
-      <category>general</category>
-    </item>
+    <link>http://127.0.0.1:3000/</link>
+    <description>Ramblings, reviews and rundowns.</description>
+    <atom:link href="http://127.0.0.1:3000/rss.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Thoughts on Lucky</title>
-      <link>http://localhost:3000/posts/thoughts-on-lucky/</link>
-      <guid>http://localhost:3000/posts/thoughts-on-lucky/</guid>
+      <link>http://127.0.0.1:3000/posts/thoughts-on-lucky/</link>
+      <guid>http://127.0.0.1:3000/posts/thoughts-on-lucky/</guid>
       <description>My thoughts on the Lucky web framework.</description>
       <content:encoded><![CDATA[<p><a href="https://rubyonrails.org">Rails</a> got popular for a reason. Everyone from junior to senior-level devs could ramp up with Rails pretty fast. My first developer job involved writing Rails applications. I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.</p>
 <p>My story isn't unique. Many successful startups got their initial MVP shipped using Rails. You could argue they would have succeeded with any framework, and to some extent, I would agree. If that framework included:</p>
@@ -144,7 +19,8 @@ hwaro serve
 </ul>
 <p>Then sure, that framework could work too.</p>
 <p>That said, Rails' language, <a href="https://www.ruby-lang.org/">Ruby</a>, is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But hiding all that complexity came at a cost. This cost came in the form of strange, runtime behaviors. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime.</p>
-<p>This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like <a href="http://localhost:3000/posts/thoughts-on-lucky/quarkus.io">Quarkus</a> to more bleeding edge ones like <a href="https://loco.rs">Loco</a>.</p>
+<p>How to get ahead of those runtime errors? There's a few ways. Automated testing, be it unit, integration or end-to-end, is one way.  But writing tests take valuable time, and rely on the vigilant, impartial developers. Another way, which is easier to enforce, is to use a statically-typed language. Something that doesn't let the developer go ahead until their code achieves some degree of type safety.</p>
+<p>There's certainly no shortage of frameworks like that, from more established ones like <a href="http://127.0.0.1:3000/posts/thoughts-on-lucky/quarkus.io">Quarkus</a> to more bleeding edge ones like <a href="https://loco.rs">Loco</a>.</p>
 <p>Another one is <a href="https://luckyframework.org/">Lucky</a>.</p>
 <p>Lucky is written in a lesser-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegant. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style channels</a> for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>). It compiles its code into binaries using the same LLVM-backed system as Rust. So you get speedy programs, static analysis, all while retaining a simple syntax.</p>
 ]]></content:encoded>
@@ -157,10 +33,10 @@ hwaro serve
     </item>
     <item>
       <title>Mixing instances of parent and child in Crystal</title>
-      <link>http://localhost:3000/posts/crystal_oo_types/</link>
-      <guid>http://localhost:3000/posts/crystal_oo_types/</guid>
-      <description>My thoughts on the Lucky web framework.</description>
-      <content:encoded><![CDATA[<p>I've been getting into <a href="https://crystal-lang.org">Crystal</a> lately.  Its syntax is a near-copy of <a href="https://ruby-lang.org/">Ruby's</a>, but its type system and compile-time checks are extremely strong.  It compiles to LLVM, similar to <a href="http://rust-lang.org">Rust's</a>, making its binaries very performant.</p>
+      <link>http://127.0.0.1:3000/posts/crystal_oo_types/</link>
+      <guid>http://127.0.0.1:3000/posts/crystal_oo_types/</guid>
+      <description>A strange error message from the Crystal compiler.</description>
+      <content:encoded><![CDATA[<p>I've been getting into <a href="https://crystal-lang.org">Crystal</a> lately.  Its syntax is a near-copy of <a href="https://ruby-lang.org/">Ruby's</a>, but its type system and compile-time checks are extremely strong.  It compiles using <a href="https://llvm.org/">LLVM</a>, like <a href="http://rust-lang.org">Rust</a> does, which results in really fast binaries.</p>
 <p>While the language is fairly readable, its error-messages aren't always clear. I was working on something like this today:</p>
 <pre data-copy="true"><code class="language-crystal hljs"><span class="hljs-keyword">class</span> <span class="hljs-variable constant_">Animal</span>
   <span class="hljs-keyword">def</span> <span class="hljs-variable">initialize</span>

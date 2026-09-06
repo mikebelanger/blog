@@ -2,7 +2,7 @@
 {% include "partials/nav.html" %}
 {% include "partials/search.html" %}
   <main id="main">
-    {% if page.title is present %}<h1>{{ page.title | e }}</h1>{% endif %}
+    {% if page.title is present %}<hgroup><h1>{{ page.title | e }}</h1></hgroup>{% endif %}
     {{ content }}
   </main>
 {% include "footer.html" %}

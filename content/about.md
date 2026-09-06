@@ -28,17 +28,18 @@ My personal tech interests include [Rust](https://rust-lang.org), [Crystal](http
 
 ### Experience
 ---
+{% hgroup() %}
 ##### Software Developer
-
 ###### [Kongsberg Geospatial](https://www.kongsberggeospatial.com) · May 2024 – Present · Ottawa, Canada
-
+{% end %}
 - Obtained "Secret" security clearance.
 - Develop React-based frontends with OpenLayers in TypeScript, prioritizing user experience and maintainable code.
 - Modified Node.js backend to interface with various microservices, ensuring code maintainability.
 
+{% hgroup() %}
 ##### Software Developer
-
 ###### [IMRSV Data Labs](https://www.imrsv.ai) · Dec 2020 – Aug 2023 · Ottawa, Canada
+{% end %}
 
 - Obtained Canadian security clearance.
 - Created React-based web interfaces in TypeScript for classified defense projects, focusing on intuitive UX and maintainable code.
@@ -46,44 +47,46 @@ My personal tech interests include [Rust](https://rust-lang.org), [Crystal](http
 - Enhanced React Native mobile interfaces for a retail workforce application.
 - Collaborated on backend development using Python and Node.js, integrating APIs for seamless frontend-backend communication.
 
+{% hgroup() %}
 ##### Junior Developer
-
 ###### [Weather Telematics Inc.](https://www.weathertelematics.com/) · July 2017 – October 2017, Oct 2018 – Mar 2020 · Ottawa
+{% end %}
 
 - Analyzed weather and traffic data using [Apache Spark](https://spark.apache.org) with Python and [Scala](https://scala-lang.org) scripts for real-time driver notifications.
 - Used QGIS to segment Autobahn routes into GPS points for road weather condition modeling (proof of concept for Daimler AG).
 - Implemented functionality for a Single Page Application built with Angular and Leaflet for weather predictions and road conditions.
 
+{% hgroup() %}
 ##### Junior Developer
-
 ###### [Fluent Solutions Inc.](https://www.fluentsolutions.com/) · Nov 2017 – Oct 2018 · Ottawa, Canada
-
+{% end %}
 - Took ownership of entire Ruby on Rails projects and worked directly with customers on requirements.
 - Developed websites using Ruby on Rails, [Bootstrap](https://getbootstrap.com), [Material Design](https://m3.material.io), and [Angular.js](https://angularjs.org) with a TDD approach.
 - Wrote frontend code with JavaScript, TypeScript, and [CoffeeScript](https://coffeescript.org).
 - Designed UI mockups using [Inkscape](https://inkscape.org) and [Pixelmator](https://www.pixelmator.com).
 
+{% hgroup() %}
 ##### Workshop Facilitator
-
 ###### [theSpace Ottawa](https://www.thespaceottawa.ca/) · May 2017 – Mar 2020 · Ottawa, Canada
-
+{% end %}
 - Taught Graphics Design Workshops using [Blender](https://www.blender.org), [Krita](https://krita.org), [Goxel](https://goxel.xyz) and [MagicaVoxel](https://ephtracy.github.io/index.html).
 - Created learning material and adapted workshops for young adults diagnosed with mental disabilities.
 
 ### Education
 ---
-
+{% hgroup() %}
 ##### [Bachelor of Cognitive Science](https://carleton.ca/cognitivescience/bachelors-of-cognitive-science/)
 ###### [Carleton University](https://carleton.ca) · 2010 – 2014
-
+{% end %}
 - Co-authored a peer-reviewed journal publication.
 - Implemented an attentional model (Emergic Network Architecture) for an AI system using Python, which simulated eye-tracking movements.
 - Established a revision control system ([git](https://git-scm.com)) for the AI model's codebase.
 - Documented various wiki articles regarding the AI model.
 
+{% hgroup() %}
 ##### [Ontario College Advanced Diploma](https://www.algonquincollege.com/creative-studies/program/animation/)
 ###### [Algonquin College of Applied Arts and Technology](https://algonquincollege.com) · 2004 – 2007
-
+{% end %}
 - Became proficient with [Blender](https://blender.org/), and some Blender Python.
 - Got familiar with [Maya](https://www.autodesk.com/products/maya) and [Adobe Photoshop](https://www.adobe.com/products/photoshop).
 

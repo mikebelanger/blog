@@ -4,9 +4,9 @@ date = "2023-12-14"
 tags = ["crystal", "lucky"]
 categories = ["general"]
 authors = ["mike"]
-description = "My thoughts on the Lucky web framework."
+description = "A strange error message from the Crystal compiler."
 +++
-I've been getting into [Crystal](https://crystal-lang.org) lately.  Its syntax is a near-copy of [Ruby's](https://ruby-lang.org/), but its type system and compile-time checks are extremely strong.  It compiles to LLVM, similar to [Rust's](http://rust-lang.org), making its binaries very performant.
+I've been getting into [Crystal](https://crystal-lang.org) lately.  Its syntax is a near-copy of [Ruby's](https://ruby-lang.org/), but its type system and compile-time checks are extremely strong.  It compiles using [LLVM](https://llvm.org/), like [Rust](http://rust-lang.org) does, which results in really fast binaries.
 
 While the language is fairly readable, its error-messages aren't always clear. I was working on something like this today:
 

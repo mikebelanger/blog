@@ -2,9 +2,10 @@
 {% include "partials/nav.html" %}
 {% include "partials/search.html" %}
   <main id="main">
+      <hgroup>
     {% if page.title is present %}<h1>{{ page.title | e }}</h1>{% endif %}
     {{ content }}
-
+      </hgroup>
     <ul class="section-list">
       {{ section.list }}
     </ul>

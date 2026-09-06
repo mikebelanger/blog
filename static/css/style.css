@@ -1,6 +1,4 @@
 :root {
-    /* Syntax (hljs classes; client and server highlighting). Pico has no
-       per-token syntax colors — only code color tokens — so these stay. */
     --code-comment:  light-dark(#a1907c, #8a8073);
     --code-keyword:  light-dark(#b03a2e, #f0846f);
     --code-string:   light-dark(#5f7032, #b7c06a);
@@ -15,28 +13,52 @@
 
     height: 100%;
 
-    h3 {
-        padding-bottom: unset;
-        margin-bottom: unset;
-    }
-
-    h6 {
-        margin-top: unset;
-        margin-bottom: unset;
-        font-style: italic;
-        font-weight: normal;
-    }
+    --pico-spacing: 1.5rem;
 
     code, code > * {
         font-family: var(--pico-font-family-monospace);
     }
 
+    --pico-font-weight: 300;
+    --pico-font-size: 120%;
+
     button {
-      --pico-font-weight: 700;
+      --pico-font-weight: 500;
     }
 
     time {
         font-style: italic;
+    }
+
+    --pico-primary: #117f6a !important;
+
+    --pico-code-kbd-color: var(--pico-primary) !important;
+    --pico-primary-border: var(--pico-primary) !important;
+    --pico-primary-underline: var(--pico-primary) !important;
+    --pico-primary-hover: color-mix(in srgb, var(--pico-primary), 40% white) !important;
+    --pico-primary-hover-border: color-mix(in srgb, var(--pico-primary), 60% transparent);
+    --pico-primary-hover-underline: color-mix(in srgb, var(--pico-primary), 40% white) !important;
+    --pico-primary-focus: var(--pico-primary) !important;
+    --pico-primary-underline: var(--pico-primary) !important;
+
+    --pico-primary-hover-background: color-mix(in srgb, var(--pico-primary), 50% transparent) !important;
+    --pico-primary-background: color-mix(in srgb, var(--pico-primary), 50% transparent) !important;
+    --pico-text-selection-color: color-mix(in srgb, var(--pico-primary), 50% transparent) !important;
+    --pico-primary-focus: color-mix(in srgb, var(--pico-primary), 90% transparent) !important;
+
+    --pico-font-size: 130%;
+
+    h1, h2, h3 {
+        --pico-font-weight: 300;
+        --pico-font-size: 140%;
+    }
+
+    h6 {
+        font-style: italic;
+    }
+
+    p, li {
+        font-size: 1.1rem;
     }
 }
 
@@ -99,7 +121,11 @@ pre code .ln { user-select: none; -webkit-user-select: none; opacity: .45; }
    CSS into a template, so a literal expression here would be rendered
    — and the expanded tag's own closing style tag would cut this
    stylesheet short, spilling the rest as page text.) */
-.code-wrapper { position: relative; }
+.code-wrapper {
+    position: relative;
+	width: fit-content;
+	box-shadow: var(--pico-primary-hover-border) 2px 2px 5px;
+}
 .code-copy-btn.code-copy-btn { position: absolute; top: 0.45rem; right: 0.45rem; padding: 0.25rem 0.6rem; font-family: var(--pico-font-family-monospace); font-size: 0.72rem; color: var(--pico-muted-color); background: var(--pico-card-background-color); border: 1px solid var(--pico-muted-border-color); border-radius: var(--pico-border-radius); opacity: 0; cursor: pointer; transition: opacity 0.15s ease; }
 .code-wrapper:hover .code-copy-btn.code-copy-btn, .code-block:hover .code-copy-btn.code-copy-btn, .code-copy-btn.code-copy-btn:focus-visible { opacity: 1; }
 .code-copy-btn.code-copy-btn.copied { opacity: 1; color: var(--code-string); border-color: var(--code-string); }
@@ -148,6 +174,10 @@ nav.stack {
     border-width: 2px;
     margin: unset;
     height: 2rem;
+}
+
+.search-and-theme > button:hover {
+    border-color: var(--pico-primary-hover-border) !important;
 }
 
 /* Search trigger */
@@ -204,6 +234,10 @@ header.slim {
 	border-bottom-width: var(--pico-border-width);
 }
 
+header.slim > .stack {
+    --pico-font-size: 110%;
+}
+
 header.post-header, footer.blog-footer {
     margin: unset;
     padding: unset;
@@ -225,8 +259,6 @@ article.post {
 
 header.post-header {
     background-color: unset;
-    margin-bottom: calc(var(--pico-block-spacing-vertical) * 0.5);
-    padding-bottom: calc(var(--pico-block-spacing-vertical) * 0.5);
     border-bottom-width: 2px;
 }
 
@@ -235,7 +267,7 @@ hr {
     padding-top: unset;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h3 {
     margin: unset;
 }
 
@@ -266,6 +298,14 @@ li.post-item, ul.section-list > li {
 
 .post-title {
     margin-bottom: unset;
+}
+
+header.post-header {
+    border-bottom: unset;
+}
+
+.post-content {
+    margin-top: var(--pico-block-spacing-vertical);
 }
 
 /* Search overlay */
@@ -397,7 +437,7 @@ li.post-item, ul.section-list > li {
 
 .search-result-item:hover,
 .search-result-item.active {
-    background: var(--pico-primary);
+    background-color: var(--pico-primary-background);
     color: var(--pico-primary-inverse);
     text-decoration: none;
 }
@@ -463,6 +503,7 @@ li.post-item, ul.section-list > li {
 footer {
 	width: 100%;
 	border-top-style: solid;
+	border-color: var(--pico-primary);
 	border-width: var(--pico-border-width);
 	padding: var(--pico-block-spacing-vertical) var(--pico-block-spacing-horizontal) !important;
 }
@@ -547,7 +588,8 @@ section#about_me_skills {
 
 section#about_me_bio > p > img {
 	float: left;
-	margin-right: calc(0.5 * var(--pico-block-spacing-horizontal));
+	margin-right: var(--pico-block-spacing-horizontal);
+	margin-bottom: var(--pico-block-spacing-horizontal);
 	border-radius: 1em;
 }
 
@@ -556,6 +598,15 @@ section#about_me_bio > p > img {
         width: 200px;
         height: auto;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1rem !important;
+    }
+
+    p, li {
+        font-size: 0.9rem !important;
+    }
+
     .stack {
         flex-direction: column;
         align-items: flex-start !important;

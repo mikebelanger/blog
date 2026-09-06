@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="My thoughts on the Lucky web framework.">
+  <meta name="description" content="A strange error message from the Crystal compiler.">
   <title>Mixing instances of parent and child in Crystal - Mike&#39;s Meanderings</title>
-  <link rel="icon" type="image/svg+xml" href="http://localhost:3000/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="http://127.0.0.1:3000/favicon.svg">
   <script>(function(){try{var t=localStorage.getItem("hwaro-theme");if(t==="light"||t==="dark"){document.documentElement.setAttribute("data-theme",t)}}catch(e){}})()</script>
   <meta property="og:title" content="Mixing instances of parent and child in Crystal">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://localhost:3000/posts/crystal_oo_types/">
-  <meta property="og:description" content="My thoughts on the Lucky web framework.">
+  <meta property="og:url" content="http://127.0.0.1:3000/posts/crystal_oo_types/">
+  <meta property="og:description" content="A strange error message from the Crystal compiler.">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Mixing instances of parent and child in Crystal">
-  <meta name="twitter:description" content="My thoughts on the Lucky web framework.">
-  <link rel="canonical" href="http://localhost:3000/posts/crystal_oo_types/">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Mixing instances of parent and child in Crystal","url":"http://localhost:3000/posts/crystal_oo_types/","datePublished":"2023-12-14T00:00:00-05:00","description":"My thoughts on the Lucky web framework.","author":{"@type":"Person","name":"mike"}}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Mike's Meanderings","item":"http://localhost:3000/"},{"@type":"ListItem","position":2,"name":"Posts","item":"http://localhost:3000/posts/"},{"@type":"ListItem","position":3,"name":"Mixing instances of parent and child in Crystal"}]}</script>
+  <meta name="twitter:description" content="A strange error message from the Crystal compiler.">
+  <link rel="canonical" href="http://127.0.0.1:3000/posts/crystal_oo_types/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Mixing instances of parent and child in Crystal","url":"http://127.0.0.1:3000/posts/crystal_oo_types/","datePublished":"2023-12-14T00:00:00-05:00","description":"A strange error message from the Crystal compiler.","author":{"@type":"Person","name":"mike"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Mike's Meanderings","item":"http://127.0.0.1:3000/"},{"@type":"ListItem","position":2,"name":"Posts","item":"http://127.0.0.1:3000/posts/"},{"@type":"ListItem","position":3,"name":"Mixing instances of parent and child in Crystal"}]}</script>
   
   
   
-  <link rel="stylesheet" href="http://localhost:3000/css/pico.min.css">
-  <link rel="stylesheet" href="http://localhost:3000/css/style.css">
+  <link rel="stylesheet" href="http://127.0.0.1:3000/css/pico.min.css">
+  <link rel="stylesheet" href="http://127.0.0.1:3000/css/style.css">
   
   
   
@@ -30,7 +30,7 @@
 <body data-section="posts">
 <header class="slim">
     <nav class="stack">
-        <a href="http://localhost:3000/" class="logo">Mike&#39;s Meanderings</a>
+        <a href="http://127.0.0.1:3000/" class="logo">Mike&#39;s Meanderings</a>
 
       <!-- Add/reorder links via [[menus.main]] in config.toml, or
            register a page/section into "main" from its own front
@@ -65,19 +65,22 @@
   <main id="main">
     <article class="post">
       <header class="post-header">
-        <h1>Mixing instances of parent and child in Crystal</h1>
-        <div class="post-meta">
-          <time datetime="2023-12-14">2023-12-14</time>
+          <hgroup>
+              <h1>Mixing instances of parent and child in Crystal</h1>
+              <hr>
+              <div class="post-meta">
+                  <time datetime="2023-12-14">2023-12-14</time>
           <span class="post-meta-sep">·</span> <span class="post-reading-time">3 min read</span>
-        </div>
+              </div>
+          </hgroup>
 
 <div class="post-tags">
-  <a class="tag" href="http://localhost:3000/tags/crystal/">crystal</a><a class="tag" href="http://localhost:3000/tags/lucky/">lucky</a>
+  <a class="tag" href="http://127.0.0.1:3000/tags/crystal/">crystal</a><a class="tag" href="http://127.0.0.1:3000/tags/lucky/">lucky</a>
 </div>
 
       </header>
       <div class="post-content">
-        <p>I've been getting into <a href="https://crystal-lang.org">Crystal</a> lately.  Its syntax is a near-copy of <a href="https://ruby-lang.org/">Ruby's</a>, but its type system and compile-time checks are extremely strong.  It compiles to LLVM, similar to <a href="http://rust-lang.org">Rust's</a>, making its binaries very performant.</p>
+        <p>I've been getting into <a href="https://crystal-lang.org">Crystal</a> lately.  Its syntax is a near-copy of <a href="https://ruby-lang.org/">Ruby's</a>, but its type system and compile-time checks are extremely strong.  It compiles using <a href="https://llvm.org/">LLVM</a>, like <a href="http://rust-lang.org">Rust</a> does, which results in really fast binaries.</p>
 <p>While the language is fairly readable, its error-messages aren't always clear. I was working on something like this today:</p>
 <pre data-copy="true"><code class="language-crystal hljs"><span class="hljs-keyword">class</span> <span class="hljs-variable constant_">Animal</span>
   <span class="hljs-keyword">def</span> <span class="hljs-variable">initialize</span>
@@ -158,7 +161,7 @@ cemetary <span class="hljs-operator">=</span> <span class="hljs-variable constan
       
       <nav class="post-nav" aria-label="More posts">
         
-        <a class="post-nav-link post-nav-prev" href="http://localhost:3000/posts/thoughts-on-lucky/" rel="prev">
+        <a class="post-nav-link post-nav-prev" href="http://127.0.0.1:3000/posts/thoughts-on-lucky/" rel="prev">
           <span class="post-nav-label">(Newer)</span>
           <span class="post-nav-title">Thoughts on Lucky</span>
         </a>
@@ -175,7 +178,7 @@ cemetary <span class="hljs-operator">=</span> <span class="hljs-variable constan
 </div>
 <style>.code-wrapper,.code-block{position:relative}.code-copy-btn{position:absolute;top:.4rem;right:.4rem;padding:.25rem .6rem;font:inherit;font-size:.75rem;color:inherit;background:transparent;border:1px solid currentColor;border-radius:.25rem;opacity:0;cursor:pointer;transition:opacity .15s}.code-wrapper:hover .code-copy-btn,.code-block:hover .code-copy-btn,.code-copy-btn:focus-visible,.code-copy-btn.copied{opacity:.75}</style>
 <script>document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll("pre[data-copy]").forEach(function(pre){var w=pre.parentNode;var l=w.classList;if(!l||!(l.contains("code-wrapper")||l.contains("code-block"))){w=document.createElement("div");w.className="code-wrapper";pre.parentNode.insertBefore(w,pre);w.appendChild(pre);}var b=document.createElement("button");b.type="button";b.className="code-copy-btn";b.textContent="Copy";b.setAttribute("aria-label","Copy code");b.addEventListener("click",function(){var c=pre.querySelector("code");var t;if(c){var k=c.cloneNode(true);k.querySelectorAll("span.ln").forEach(function(n){n.remove();});t=k.textContent;}else{t=pre.textContent;}navigator.clipboard.writeText(t).then(function(){b.classList.add("copied");b.textContent="Copied!";setTimeout(function(){b.classList.remove("copied");b.textContent="Copy";},2000);});});w.appendChild(b);});});</script>
-<script src="http://localhost:3000/js/search.js"></script>
+<script src="http://127.0.0.1:3000/js/search.js"></script>
 <script>
 (function () {
   var KEY = "hwaro-theme";

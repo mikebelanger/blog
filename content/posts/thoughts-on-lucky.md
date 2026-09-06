@@ -18,7 +18,9 @@ Then sure, that framework could work too.
 
 That said, Rails' language, [Ruby](https://www.ruby-lang.org/), is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But hiding all that complexity came at a cost. This cost came in the form of strange, runtime behaviors. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime. 
 
-This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like [Quarkus](quarkus.io) to more bleeding edge ones like [Loco](https://loco.rs).
+How to get ahead of those runtime errors? There's a few ways. Automated testing, be it unit, integration or end-to-end, is one way.  But writing tests take valuable time, and rely on the vigilant, impartial developers. Another way, which is easier to enforce, is to use a statically-typed language. Something that doesn't let the developer go ahead until their code achieves some degree of type safety.
+
+There's certainly no shortage of frameworks like that, from more established ones like [Quarkus](quarkus.io) to more bleeding edge ones like [Loco](https://loco.rs).
 
 Another one is [Lucky](https://luckyframework.org/).
 
