@@ -40,12 +40,12 @@
     </nav>
     <div class="search-and-theme">
       <!---->
-      <button class="search-trigger outline" onclick="openSearch()" title="Search">
+      <button class="search-trigger outline secondary" onclick="openSearch()" title="Search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         <span>Search</span>
         <kbd>&#8984;K</kbd>
       </button>
-      <button class="theme-toggle" type="button" data-mode="auto" aria-label="Theme: auto" title="Theme: auto — click to switch">
+      <button class="theme-toggle outline secondary" type="button" data-mode="auto" aria-label="Theme: auto" title="Theme: auto — click to switch">
   <svg class="tt-auto" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"/></svg>
   <svg class="tt-light" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 .9v2M8 13.1v2M.9 8h2M13.1 8h2M2.98 2.98l1.42 1.42M11.6 11.6l1.42 1.42M13.02 2.98L11.6 4.4M4.4 11.6l-1.42 1.42" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
   <svg class="tt-dark" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.4 9.9A5.8 5.8 0 0 1 6.1 2.6a5.8 5.8 0 1 0 7.3 7.3z" fill="currentColor"/></svg>
@@ -78,9 +78,15 @@
 
       </header>
       <div class="post-content">
-        <p><a href="https://rubyonrails.org">Rails</a> got popular for a reason. It provided high-level productivity with just enough flexibility for a whole swath of web applications. Everyone from junior to senior-level devs could ramp up pretty fast. My first developer job was writing Rails applications, and I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.</p>
-<p>Lots of startups owe their initial success to Rails. You could argue they would have succeeded with any framework, but they chose that.</p>
-<p>That said, Rails' language, <a href="https://www.ruby-lang.org/">Ruby</a>, is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But in hiding all that, it made it all the more difficult to understand. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime.</p>
+        <p><a href="https://rubyonrails.org">Rails</a> got popular for a reason. Everyone from junior to senior-level devs could ramp up with Rails pretty fast. My first developer job involved writing Rails applications. I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.</p>
+<p>My story isn't unique. Many successful startups got their initial MVP shipped using Rails. You could argue they would have succeeded with any framework, and to some extent, I would agree. If that framework included:</p>
+<ul>
+<li>A CLI for generating clean, conventional code quickly</li>
+<li>A REPL (read: console) for easy debugging and inspection</li>
+<li>Bonus points if the language was concise, relatively boilerplate-free, and allowed developers to focus on business logic.</li>
+</ul>
+<p>Then sure, that framework could work too.</p>
+<p>That said, Rails' language, <a href="https://www.ruby-lang.org/">Ruby</a>, is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But hiding all that complexity came at a cost. This cost came in the form of strange, runtime behaviors. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime.</p>
 <p>This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like <a href="quarkus.io">Quarkus</a> to more bleeding edge ones like <a href="https://loco.rs">Loco</a>.</p>
 <p>Another one is <a href="https://luckyframework.org/">Lucky</a>.</p>
 <p>Lucky is written in a lesser-known language called <a href="https://crystal-lang.org/">Crystal</a>. Crystal's syntax looks almost identical to Ruby's. Object-oriented, elegant. Under the hood, it differs a lot. It's statically-typed, and uses <a href="https://crystal-lang.org/reference/1.21/guides/concurrency.html#channels">CSP-style channels</a> for concurrency (similar to <a href="https://gobyexample.com/channels">Go's</a>). It compiles its code into binaries using the same LLVM-backed system as Rust. So you get speedy programs, static analysis, all while retaining a simple syntax.</p>

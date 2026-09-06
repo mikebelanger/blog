@@ -6,11 +6,17 @@ categories = ["general"]
 authors = ["mike"]
 description = "My thoughts on the Lucky web framework."
 +++
-[Rails](https://rubyonrails.org) got popular for a reason. It provided high-level productivity with just enough flexibility for a whole swath of web applications. Everyone from junior to senior-level devs could ramp up pretty fast. My first developer job was writing Rails applications, and I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.
+[Rails](https://rubyonrails.org) got popular for a reason. Everyone from junior to senior-level devs could ramp up with Rails pretty fast. My first developer job involved writing Rails applications. I went from knowing nothing about Rails to pushing out bugfixes within weeks, and full-features within months.
 
-Lots of startups owe their initial success to Rails. You could argue they would have succeeded with any framework, but they chose that.
+My story isn't unique. Many successful startups got their initial MVP shipped using Rails. You could argue they would have succeeded with any framework, and to some extent, I would agree. If that framework included:
 
-That said, Rails' language, [Ruby](https://www.ruby-lang.org/), is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But in hiding all that, it made it all the more difficult to understand. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime. 
+  * A CLI for generating clean, conventional code quickly
+  * A REPL (read: console) for easy debugging and inspection
+  * Bonus points if the language was concise, relatively boilerplate-free, and allowed developers to focus on business logic.
+
+Then sure, that framework could work too. 
+
+That said, Rails' language, [Ruby](https://www.ruby-lang.org/), is a double-edged sword. Ruby's syntax hid lots from the developer, which made it look simple.  But hiding all that complexity came at a cost. This cost came in the form of strange, runtime behaviors. It's dynamic typing gave it flexibility, but was nearly impossible to perform any kind of static analysis/linting. This translated to more errors, and the kind of errors you could only see at runtime. 
 
 This has led me, and many other developers to wonder: is the killer combo something like Rails, but uses a statically-typed language?  There's certainly no shortage of frameworks like that, from more established ones like [Quarkus](quarkus.io) to more bleeding edge ones like [Loco](https://loco.rs).
 
